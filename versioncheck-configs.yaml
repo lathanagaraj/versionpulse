@@ -1,0 +1,64 @@
+tools:
+  docker-desktop:
+    scoop:
+      checkver:
+        url: "https://docs.docker.com/desktop/release-notes/"
+        regex: "Docker Desktop ([\\d.]+)\\s"
+    homebrew:
+      livecheck:
+        url: "https://desktop.docker.com/win/main/amd64/appcast.xml"
+        strategy: sparkle
+  dotnet:
+    scoop:
+      checkver:
+        url: "https://dotnet.microsoft.com/en-us/download/dotnet"
+        regex: "Latest stable release: ([\\d.]+)"
+    homebrew:
+      livecheck:
+        url: stable
+        regex: "^v?(\\d+(?:\\.\\d+)+)$"
+  drawio:
+    scoop:
+      checkver:
+        url: "https://github.com/jgraph/drawio-desktop/releases"
+        regex: "/releases/tag/v([\\d.]+)"
+    homebrew:
+      livecheck:
+        url: url
+        strategy: github_latest
+  kubectl:
+    scoop:
+      checkver:
+        url: "https://github.com/kubernetes/kubernetes/releases"
+        regex: "/releases/tag/v([\\d.]+)"
+    homebrew:
+      livecheck:
+        url: stable
+        regex: "^v?(\\d+(?:\\.\\d+)+)$"
+  nodejs:
+    scoop:
+      checkver:
+        url: "https://nodejs.org/en/download/"
+        regex: "Latest LTS Version: ([\\d.]+)"
+    homebrew:
+      livecheck:
+        url: stable
+        regex: "^v?(\\d+(?:\\.\\d+)+)$"
+  openshift:
+    scoop:
+      checkver:
+        url: "https://github.com/openshift/oc/releases"
+        regex: "/releases/tag/v([\\d.]+)"
+    homebrew:
+      livecheck:
+        url: stable
+        regex: "^v?(\\d+(?:\\.\\d+)+)$"
+  python:
+    scoop:
+      checkver:
+        url: "https://www.python.org/downloads/"
+        regex: "Latest Python ([\\d.]+) Release"
+    homebrew:
+      livecheck:
+        url: stable
+        regex: "^Python v?(\\d+(?:\\.\\d+)+)$"
