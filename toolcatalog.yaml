@@ -1,0 +1,162 @@
+tools:
+  - name: "7zip"
+    classification: "github"
+    source: "https://github.com/ip7z/7zip"
+    method: "tags"
+
+  - name: "awscli2"
+    classification: "github"
+    source: "https://github.com/aws/aws-cli"
+    method: "releases"
+
+  - name: "bruno"
+    classification: "github"
+    source: "https://github.com/usebruno/bruno"
+    method: "releases"
+
+  - name: "clink"
+    classification: "github"
+    source: "https://github.com/chrisant996/clink"
+    method: "releases"
+
+  - name: "dbeaver"
+    classification: "github"
+    source: "https://github.com/dbeaver/dbeaver"
+    method: "releases"
+
+  - name: "dive"
+    classification: "github"
+    source: "https://github.com/wagoodman/dive"
+    method: "releases"
+
+  - name: "dockerdesktop"
+    classification: "custom"
+    source: "https://www.docker.com/products/docker-desktop"
+    webpage: "dynamic"
+    regex: "Docker Desktop ([\\d.]+)"
+
+  - name: "dotnet6"
+    classification: "github"
+    source: "https://github.com/dotnet/core"
+    method: "tags"
+
+  - name: "dotnet8"
+    classification: "github"
+    source: "https://github.com/dotnet/core"
+    method: "tags"
+
+  - name: "drawio"
+    classification: "github"
+    source: "https://github.com/jgraph/drawio"
+    method: "releases"
+
+  - name: "etl2capng"
+    classification: "github"
+    source: "https://github.com/microsoft/etl2pcapng"
+    method: "releases"
+
+  - name: "go121"
+    classification: "github"
+    source: "https://github.com/golang/go"
+    method: "tags"
+
+  - name: "go122"
+    classification: "github"
+    source: "https://github.com/golang/go"
+    method: "tags"
+
+  - name: "go123"
+    classification: "github"
+    source: "https://github.com/golang/go"
+    method: "tags"
+
+  - name: "helm"
+    classification: "github"
+    source: "https://github.com/helm/helm"
+    method: "releases"
+
+  - name: "inkscape"
+    classification: "github"
+    source: "https://github.com/inkscape/inkscape"
+    method: "releases"
+
+  - name: "intelliju2023"
+    classification: "custom"
+    source: "https://www.jetbrains.com/idea/download/other.html"
+    webpage: "static"
+    regex: "IntelliJ IDEA 2023\\.([\\d.]+)"
+
+  - name: "intelliju2024"
+    classification: "custom"
+    source: "https://www.jetbrains.com/idea/download/other.html"
+    webpage: "static"
+    regex: "IntelliJ IDEA 2024\\.([\\d.]+)"
+
+  - name: "jq"
+    classification: "github"
+    source: "https://github.com/jqlang/jq"
+    method: "releases"
+
+  - name: "kubectl"
+    classification: "github"
+    source: "https://github.com/kubernetes/kubernetes"
+    method: "tags"
+
+  - name: "make-win"
+    classification: "github"
+    source: "https://github.com/mbuilov/make-win"
+    method: "releases"
+
+  - name: "node16"
+    classification: "github"
+    source: "https://github.com/nodejs/node"
+    method: "tags"
+
+  - name: "node18"
+    classification: "github"
+    source: "https://github.com/nodejs/node"
+    method: "tags"
+
+  - name: "node20"
+    classification: "github"
+    source: "https://github.com/nodejs/node"
+    method: "tags"
+
+  - name: "node22"
+    classification: "github"
+    source: "https://github.com/nodejs/node"
+    method: "tags"
+
+  - name: "notepadplusplus"
+    classification: "github"
+    source: "https://github.com/notepad-plus-plus/notepad-plus-plus"
+    method: "releases"
+
+  - name: "openshift"
+    classification: "github"
+    source: "https://github.com/openshift/okd"
+    method: "tags"
+
+  - name: "oraclejdk8"
+    classification: "custom"
+    source: "https://www.oracle.com/java/technologies/javase/jdk8-archive-downloads.html"
+    webpage: "static"
+    regex: "JDK 8u([\\d.]+)"
+
+  - name: "oraclejdk11"
+    classification: "custom"
+    source: "https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html"
+    webpage: "static"
+    regex: "JDK 11\\.([\\d.]+)"
+
+  - name: "oraclejdk17"
+    classification: "custom"
+    source: "https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html"
+    webpage: "static"
+    regex: "JDK 17\\.([\\d.]+)"
+
+  - name: "oraclejdk21"
+    classification: "custom"
+    source: "https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html"
+    webpage: "static"
+    regex: "JDK 21\\.([\\d.]+)"
