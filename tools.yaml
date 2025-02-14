@@ -1,0 +1,101 @@
+tools:
+  # - name: 7zip
+  #   url: https://www.7-zip.org/download.html
+  # - name: awscli2
+  #   url: https://github.com/aws/aws-cli/releases
+  # - name: azurecli
+  #   url: https://docs.microsoft.com/en-us/cli/azure/release-notes-azure-cli
+  # - name: bicepcli
+  #   url: https://github.com/Azure/bicep/releases
+  # - name: bruno
+  #   url: https://github.com/usebruno/bruno/releases
+  # - name: clink
+  #   url: https://github.com/mridgers/clink/releases
+  # - name: dbeaver
+  #   url: https://dbeaver.io/download/
+  # - name: dive
+  #   url: https://github.com/wagoodman/dive/releases
+  # - name: docker-desktop
+  #   url: https://docs.docker.com/desktop/release-notes/
+  # - name: dotnet6
+  #   url: https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+  # - name: dotnet8
+  #   url: https://dotnet.microsoft.com/en-us/download/dotnet/8.0
+  # - name: drawio
+  #   url: https://github.com/jgraph/drawio-desktop/releases
+  # - name: etl2pcapng
+  #   url: https://github.com/microsoft/etl2pcapng/releases
+  # - name: ffmpeg
+  #   url: https://ffmpeg.org/download.html
+  # - name: gateway
+  #   url: https://github.com/scooterw/portal/releases
+  # - name: git-win
+  #   url: https://gitforwindows.org/
+  - name: gitlab-cli
+    url: https://gitlab.com/gitlab-org/cli/-/releases.atom
+  - name: gitlab-release-cli
+    url: https://gitlab.com/gitlab-org/release-cli/-/releases
+  - name: go121
+    url: https://golang.org/dl/
+  - name: go122
+    url: https://golang.org/dl/
+  - name: go123
+    url: https://golang.org/dl/
+  - name: helm
+    url: https://github.com/helm/helm/releases
+  - name: inkscape
+    url: https://inkscape.org/release/
+  - name: intelliju2023
+    url: https://www.jetbrains.com/idea/download/other.html
+  - name: intelliju2024
+    url: https://www.jetbrains.com/idea/download/other.html
+  - name: jmeter
+    url: https://jmeter.apache.org/download_jmeter.cgi
+  - name: jq
+    url: https://github.com/stedolan/jq/releases
+  - name: kubectl
+    url: https://github.com/kubernetes/kubernetes/releases
+  - name: make-win
+    url: https://gnuwin32.sourceforge.net/packages/make.htm
+  - name: maven
+    url: https://maven.apache.org/download.cgi
+  - name: miniconda
+    url: https://docs.conda.io/en/latest/miniconda.html
+  - name: node16
+    url: https://nodejs.org/en/download/releases/
+  - name: node18
+    url: https://nodejs.org/en/download/releases/
+  - name: node20
+    url: https://nodejs.org/en/download/releases/
+  - name: node22
+    url: https://nodejs.org/en/download/releases/
+  - name: notepadplusplus
+    url: https://notepad-plus-plus.org/downloads/
+  - name: openshift
+    url: https://github.com/openshift/okd/releases
+  - name: oraclejdk11
+    url: https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
+  - name: oraclejdk17
+    url: https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+  - name: oraclejdk21
+    url: https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html
+  - name: oraclejdk8
+    url: https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+  - name: powershell
+    url: https://github.com/PowerShell/PowerShell/releases
+  - name: putty
+    url: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+  - name: python310
+    url: https://www.python.org/downloads/release/python-3100/
+  - name: python311
+    url: https://www.python.org/downloads/release/python-3110/
+  - name: python312
+    url: https://www.python.org/downloads/release/python-3120/
+  - name: python39
+    url: https://www.python.org/downloads/release/python-390/
+  - name: rider
+    url: https://www.jetbrains.com/rider/download/other.html
+  - name: screentogif
+    url: https://github.com/NickeManarin/ScreenToGif/releases
+  - name: task
+    url: https://github.com/go-task/task/releases
