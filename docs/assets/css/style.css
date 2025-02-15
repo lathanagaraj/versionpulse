@@ -55,3 +55,83 @@ p {
   font-size: 0.9rem;
   color: #666;
 }
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.rss-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.rss-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.rss-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.rss-item h3 {
+  font-size: 1.25rem;
+  color: #0077cc;
+  margin-bottom: 10px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.rss-item h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.rss-item h3 a:hover {
+  color: #005fa3;
+}
+
+.rss-item p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .rss-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+}
