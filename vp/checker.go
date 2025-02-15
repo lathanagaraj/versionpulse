@@ -160,7 +160,7 @@ func createPrompt(toolName, extractedText string) (string, error) {
 	}
 
 	// Define the data for the prompt
-	data := PromptData{
+	data := promptData{
 		Tool:       toolName,
 		WebContent: extractedText,
 	}
