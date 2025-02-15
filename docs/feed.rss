@@ -3,24 +3,6 @@
     <title>Latest Tool Versions</title>
     <link>https://example.com</link>
     <description>Latest Tool Versions RSS feed</description>
-    <pubDate>Fri, 14 Feb 2025 23:36:41 -0500</pubDate>
-    <item>
-      <title>powershell</title>
-      <link>https://github.com/PowerShell/PowerShell/releases</link>
-      <description>powershell 7.5.0 2025-01-23</description>
-      <pubDate>Fri, 14 Feb 2025 23:36:41 -0500</pubDate>
-    </item>
-    <item>
-      <title>putty</title>
-      <link>https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</link>
-      <description>putty 0.83 2025-02-08</description>
-      <pubDate>Fri, 14 Feb 2025 23:36:41 -0500</pubDate>
-    </item>
-    <item>
-      <title>python310</title>
-      <link>https://www.python.org/downloads/release/python-3100/</link>
-      <description>python310 3.10.0 2021-10-04</description>
-      <pubDate>Fri, 14 Feb 2025 23:36:41 -0500</pubDate>
-    </item>
+    <pubDate>Sat, 15 Feb 2025 10:48:39 -0500</pubDate>
   </channel>
 </rss>

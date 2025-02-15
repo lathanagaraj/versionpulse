@@ -54,7 +54,7 @@ func NewChecker(toolName, content string) Checker {
 }
 
 func (c Checker) CheckVersion() (*ToolVersion, error) {
-	response, err := queryLLM(apiKey, baseURL, c.ToolName, c.Content)
+	response, err := queryLLM(c.ToolName, c.Content)
 	if err != nil {
 		log.Printf("Error querying LLM: %v", err)
 		return nil, err
@@ -82,11 +82,11 @@ func createAzureClient() *openai.ClientConfig {
 	return &config
 }
 
-func createClient() *openai.ClientConfig {
-	config := openai.DefaultConfig(apiKey)
-	config.BaseURL = baseURL
-	return &config
-}
+// func createClient() *openai.ClientConfig {
+// 	config := openai.DefaultConfig(apiKey)
+// 	config.BaseURL = baseURL
+// 	return &config
+// }
 
 func createhttpClient() *http.Client {
 	// Configure retryable HTTP client
@@ -100,7 +100,7 @@ func createhttpClient() *http.Client {
 }
 
 // Queries an LLM using OpenAI client with a custom base URL
-func queryLLM(apiKey, baseURL, toolName, extractedText string) (string, error) {
+func queryLLM(toolName, extractedText string) (string, error) {
 
 	// Combine extracted text with user query
 	userprompt, err := createPrompt(toolName, extractedText)
@@ -172,9 +172,6 @@ func createPrompt(toolName, extractedText string) (string, error) {
 		fmt.Println(err)
 		return "", err
 	}
-
-	// Print the resolved prompt
-	//fmt.Println(buf.String())
 
 	return buf.String(), nil
 }
