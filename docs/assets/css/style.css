@@ -9,12 +9,13 @@ body {
 }
 
 .banner {
-  background-image: url('/assets/banner.png'); /* Replace with your banner image */
+  background-image: url('/../banner.png'); /* Replace with your banner image */
   background-size: cover;
   background-position: center;
-  height: 200px; /* Adjust the height to your liking */
+  height: 400px; /* Adjust the height to your liking */
   color: #fff; /* Text color */
   text-align: center;
+  width: 100%;
   padding: 20px;
 }
 

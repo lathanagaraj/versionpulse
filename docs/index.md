@@ -49,5 +49,4 @@ VersionPulse is your go-to solution for tracking developer tool releases from **
 
 [Aggregated JSON RSS Feed](https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json)
 
-[View the RSS Feed](rss-feed.html)
 
