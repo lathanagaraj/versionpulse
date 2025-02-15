@@ -9,7 +9,7 @@ body {
 }
 
 .banner {
-  background-image: url('/../banner.png'); /* Replace with your banner image */
+  background-image: url('../banner.png'); /* Replace with your banner image */
   background-size: cover;
   background-position: center;
   height: 400px; /* Adjust the height to your liking */
