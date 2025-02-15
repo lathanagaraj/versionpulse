@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS Feed Viewer</title>
+    <style>
+        .rss-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .rss-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .rss-item h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Latest RSS Feed</h1>
+<div id="rss-feed" class="rss-grid"></div>
+
+<script>
+    // Replace with your RSS feed URL
+    const rssUrl = 'https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json';
+
+    // Fetch RSS feed data and display it
+    fetch(rssUrl)
+        .then(response => response.json())
+        .then(data => {
+            const feedContainer = document.getElementById('rss-feed');
+            data.items.forEach(item => {
+                const feedItem = document.createElement('div');
+                feedItem.classList.add('rss-item');
+                feedItem.innerHTML = `
+                    <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
+                    <p>${item.description}</p>
+                `;
+                feedContainer.appendChild(feedItem);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching RSS feed:', error);
+        });
+</script>
+
+</body>
+</html>
