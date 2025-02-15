@@ -13,5 +13,5 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
 
 VersionPulse is your go-to solution for tracking developer tool releases from **GitHub** and **vendor websites**. Stay informed with **automated RSS feeds** and never miss an update.
 
-[Aggregated JSON RSS Feed](https://github.com/lathanagaraj/versionpulse/blob/main/docs/feed.json)
+[Aggregated JSON RSS Feed](https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json)
 
