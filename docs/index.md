@@ -9,7 +9,7 @@ header:
 excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS feed."
 ---
 <head>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 </head>
 
 ## Welcome to VersionPulse
