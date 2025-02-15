@@ -89,30 +89,30 @@ tools:
     url: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
   - name: python310
     url: https://www.python.org/downloads/release/python-3100/
-  - name: python311
-    url: https://www.python.org/downloads/release/python-3110/
-  - name: python312
-    url: https://www.python.org/downloads/release/python-3120/
-  - name: python39
-    url: https://www.python.org/downloads/release/python-390/
-  - name: rider
-    url: https://www.jetbrains.com/rider/download/
-  - name: screentogif
-    url: https://www.screentogif.com/
-  - name: task
-    url: https://github.com/go-task/task/releases
-  - name: terraform
-    url: https://github.com/hashicorp/terraform/releases
+  # - name: python311
+  #   url: https://www.python.org/downloads/release/python-3110/
+  # - name: python312
+  #   url: https://www.python.org/downloads/release/python-3120/
+  # - name: python39
+  #   url: https://www.python.org/downloads/release/python-390/
+  # - name: rider
+  #   url: https://www.jetbrains.com/rider/download/
+  # - name: screentogif
+  #   url: https://www.screentogif.com/
+  # - name: task
+  #   url: https://github.com/go-task/task/releases
+  # - name: terraform
+  #   url: https://github.com/hashicorp/terraform/releases
  
-  - name: vscode
-    url: https://code.visualstudio.com/updates
-  - name: windows-terminal
-    url: https://github.com/microsoft/terminal/releases
-  - name: winmerge
-    url: https://github.com/WinMerge/winmerge/releases
-  - name: wireshark
-    url: https://www.wireshark.org/download.html
-  - name: yq
-    url: https://github.com/mikefarah/yq/releases
+  # - name: vscode
+  #   url: https://code.visualstudio.com/updates
+  # - name: windows-terminal
+  #   url: https://github.com/microsoft/terminal/releases
+  # - name: winmerge
+  #   url: https://github.com/WinMerge/winmerge/releases
+  # - name: wireshark
+  #   url: https://www.wireshark.org/download.html
+  # - name: yq
+  #   url: https://github.com/mikefarah/yq/releases
 
 

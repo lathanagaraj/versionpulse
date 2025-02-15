@@ -3,16 +3,19 @@ package main
 import (
 	"bytes"
 	"context"
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 	"strings"
 	"time"
 
 	"text/template"
 
 	"github.com/PuerkitoBio/goquery"
+	"github.com/gorilla/feeds"
 	"github.com/hashicorp/go-retryablehttp"
 	openai "github.com/sashabaranov/go-openai"
 	"gopkg.in/yaml.v2"
@@ -27,6 +30,7 @@ import (
 // const modelName = "deepseek/deepseek-r1:free"
 
 // Azure Open AI
+const apiKey = ""
 const baseURL = "https://version-pulse.openai.azure.com"
 const modelName = "gpt-4o"
 
@@ -41,6 +45,13 @@ type Tools struct {
 type PromptData struct {
 	Tool       string
 	WebContent string
+}
+
+type ToolVersion struct {
+	Tool    string `json:"tool"`
+	Version string `json:"version"`
+	Date    string `json:"date"`
+	Link    string
 }
 
 // Extracts text from an HTML string
@@ -162,6 +173,8 @@ func checkToolVersions() {
 	}
 
 	// Fetch HTML pages for each URL and extract text content
+
+	var toolVersions []ToolVersion
 	for _, tool := range toolsMap.Tools {
 		siteContent, err := extractTextFromHTML(tool.URL)
 		if err != nil {
@@ -173,37 +186,51 @@ func checkToolVersions() {
 		if err != nil {
 			log.Printf("Error querying LLM: %v", err)
 		}
-		result, err := extractJSONObject(response)
+		toolVersion, err := extractJSONObject(response)
 
 		if err != nil {
 			log.Printf("Error extracting JSON object: %v", err)
 		}
+		toolVersion.Link = tool.URL
+		toolVersions = append(toolVersions, *toolVersion)
 
-		println("result " + result)
+		println("result " + toolVersion.Tool + " " + toolVersion.Version + " " + toolVersion.Date + " " + toolVersion.Link)
+	}
+
+	err = generateRSSFeed(toolVersions)
+	if err != nil {
+		log.Printf("Error generating RSS feed: %v", err)
 	}
 }
 
-func extractJSONObject(text string) (string, error) {
+func extractJSONObject(text string) (*ToolVersion, error) {
 	// Find the JSON object in the text
 	startIndex := strings.Index(text, "{")
 	if startIndex == -1 {
-		return "", fmt.Errorf("no JSON object found in text")
+		return nil, fmt.Errorf("no JSON object found in text")
 	}
 
 	endIndex := strings.Index(text, "}")
 	if endIndex == -1 {
-		return "", fmt.Errorf("no closing bracket found in JSON object")
+		return nil, fmt.Errorf("no closing bracket found in JSON object")
 	}
 
 	// Extract the JSON object
-	jsonObject := text[startIndex : endIndex+1]
+	jsonString := text[startIndex : endIndex+1]
+	var toolVersion ToolVersion
 
-	return jsonObject, nil
+	err := json.Unmarshal([]byte(jsonString), &toolVersion)
+	if err != nil {
+		return nil, fmt.Errorf("error unmarshalling JSON object: %v", err)
+	}
+
+	return &toolVersion, nil
 }
 
 func main() {
 
 	checkToolVersions()
+	//test()
 
 }
 
@@ -236,4 +263,43 @@ func createhttpClient() *http.Client {
 	retryClient.CheckRetry = retryablehttp.DefaultRetryPolicy // Automatic handling of 429 errors
 
 	return retryClient.StandardClient()
+}
+
+func generateRSSFeed(toolVersions []ToolVersion) error {
+	// Create a new RSS feed
+	feed := &feeds.Feed{
+		Title:       "Latest Tool Versions",
+		Link:        &feeds.Link{Href: "https://example.com"},
+		Description: "Latest Tool Versions RSS feed",
+		Created:     time.Now(),
+	}
+
+	// Convert JSON items to RSS items
+	for _, toolVersion := range toolVersions {
+
+		rssItem := &feeds.Item{
+			Title:       toolVersion.Tool,
+			Link:        &feeds.Link{Href: toolVersion.Link},
+			Description: toolVersion.Tool + " " + toolVersion.Version + " " + toolVersion.Date,
+			Created:     time.Now(),
+		}
+		feed.Items = append(feed.Items, rssItem)
+	}
+
+	// Convert feed to RSS format
+	rss, err := feed.ToRss()
+	if err != nil {
+		return fmt.Errorf("error generating RSS: %v", err)
+	}
+
+	os.MkdirAll("docs", os.ModePerm)
+
+	// Write RSS to file
+	err = ioutil.WriteFile("docs/feed.rss", []byte(rss), 0644)
+	if err != nil {
+		return fmt.Errorf("error writing RSS file: %v", err)
+	}
+
+	fmt.Println("RSS feed successfully generated as feed.rss")
+	return nil
 }
