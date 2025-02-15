@@ -3,40 +3,29 @@ layout: default
 title: VersionPulse
 ---
 
-# Welcome to VersionPulse
+<div class="container">
+  <div class="hero">
+    <h1>Welcome to VersionPulse</h1>
+    <p>Your go-to solution for tracking developer tool releases via RSS.</p>
+    <a class="button" href="https://github.com/lathanagaraj/versionpulse">View on GitHub</a>
+    <a class="button" href="rss.xml">Subscribe to RSS</a>
+  </div>
 
-![VersionPulse Logo](assets/logo.png)
+  <h2>🚀 Features</h2>
+  <p>🔹 Cross-platform Support for tracking GitHub & vendor releases</p>
+  <p>🔹 Real-time Notifications for new versions</p>
+  <p>🔹 Easy Setup & Subscription</p>
 
-VersionPulse provides an efficient RSS feed for releases across various developer tools from GitHub releases and vendor sites. It helps developers stay up-to-date with the latest releases, enabling better tool management and seamless workflow integration.
+  <h2>📌 Getting Started</h2>
+  <p>1️⃣ Clone the repo:<br><code>git clone https://github.com/lathanagaraj/versionpulse.git</code></p>
+  <p>2️⃣ Configure your tracking sources</p>
+  <p>3️⃣ Run the script to generate an RSS feed</p>
 
-## 🚀 Features
-- **Cross-platform Support**: Get RSS feeds for the latest versions of developer tools from GitHub and vendor websites.
-- **Real-time Updates**: VersionPulse offers real-time notifications on the latest releases.
-- **Easy Setup**: Simple configuration to start tracking releases from any project or vendor you care about.
+  <h2>📬 Stay Updated</h2>
+  <p>Subscribe to our RSS feed and never miss an update!</p>
+  <a class="button" href="rss.xml">Subscribe Now</a>
 
-## 📌 Getting Started
-
-### 🛠 Step-by-Step Guide
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/lathanagaraj/versionpulse.git
-   ```
-
-2. **Set up the configuration**  
-   Modify the `config.yaml` file to add the GitHub repositories or vendor sites you want to track.
-
-3. **Run the script**  
-   ```bash
-   python versionpulse.py
-   ```
-
-4. **Subscribe to RSS Feeds**  
-   Use any RSS reader to subscribe to the generated feed and receive notifications for each new release.
-
-For more details, check out the [GitHub repository](https://github.com/lathanagaraj/versionpulse).
-
----
-## 📬 Stay Updated
-📢 Subscribe to our RSS feed to get the latest updates on new releases for your favorite developer tools!
-
-[🔗 View RSS Feed](https://lathanagaraj.github.io/versionpulse/rss.xml)
+  <div class="footer">
+    <p>Made with ❤️ for developers</p>
+  </div>
+</div>
