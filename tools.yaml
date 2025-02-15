@@ -85,10 +85,10 @@ tools:
   #   url: https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
   - name: powershell
     url: https://github.com/PowerShell/PowerShell/releases
-  - name: putty
-    url: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
-  - name: python310
-    url: https://www.python.org/downloads/release/python-3100/
+  # - name: putty
+  #   url: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+  # - name: python310
+  #   url: https://www.python.org/downloads/release/python-3100/
   # - name: python311
   #   url: https://www.python.org/downloads/release/python-3110/
   # - name: python312

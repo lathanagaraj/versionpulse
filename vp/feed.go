@@ -18,6 +18,8 @@ func NewToolsFeed(toolVersions []ToolVersion) *ToolsFeed {
 	}
 }
 
+const feedname = "docs/feed.json"
+
 func (f *ToolsFeed) ToRss() error {
 	// Create a new RSS feed
 	feed := &feeds.Feed{
@@ -48,7 +50,7 @@ func (f *ToolsFeed) ToRss() error {
 	os.MkdirAll("docs", os.ModePerm)
 
 	// Write RSS to file
-	err = os.WriteFile("docs/feed.rss", []byte(rss), 0644)
+	err = os.WriteFile(feedname, []byte(rss), 0644)
 	if err != nil {
 		return fmt.Errorf("error writing RSS file: %v", err)
 	}
