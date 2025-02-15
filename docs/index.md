@@ -16,9 +16,10 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
 <div class="banner">
   <!-- Your banner content here -->
   <h1>VersionPulse</h1>
+  VersionPulse is your go-to solution for tracking developer tool releases from **GitHub** and **Vendor WebSites**. Stay informed with **automated RSS feeds** and never miss an update.
 </div>
 
-VersionPulse is your go-to solution for tracking developer tool releases from **GitHub** and **Vendor WebSites**. Stay informed with **automated RSS feeds** and never miss an update.
+
 
 <h2>Latest Releases</h2>
 <div id="rss-feed" class="rss-grid"></div>
