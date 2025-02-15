@@ -15,12 +15,12 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
 
 <div class="banner">
   <!-- Your banner content here -->
-  <h1>Welcome to VersionPulse</h1>
+  <h1>VersionPulse</h1>
 </div>
 
 VersionPulse is your go-to solution for tracking developer tool releases from **GitHub** and **Vendor WebSites**. Stay informed with **automated RSS feeds** and never miss an update.
 
-<h1>Latest RSS Feed</h1>
+<h2>Latest RSS Feed</h2>
 <div id="rss-feed" class="rss-grid"></div>
 
 <script>
@@ -47,6 +47,6 @@ VersionPulse is your go-to solution for tracking developer tool releases from **
         });
 </script>
 
-[Aggregated JSON RSS Feed](https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json)
+[JSON RSS Feed](https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json)
 
 
