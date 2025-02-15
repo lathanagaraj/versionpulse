@@ -1,11 +1,21 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background: #f8f9fa;
+  background: #010c18;
   color: #333;
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.banner {
+  background-image: url('/assets/banner.png'); /* Replace with your banner image */
+  background-size: cover;
+  background-position: center;
+  height: 200px; /* Adjust the height to your liking */
+  color: #fff; /* Text color */
+  text-align: center;
+  padding: 20px;
 }
 
 .container {

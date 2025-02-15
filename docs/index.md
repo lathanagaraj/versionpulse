@@ -12,11 +12,13 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 </head>
 
-## Welcome to VersionPulse
 
-VersionPulse is your go-to solution for tracking developer tool releases from **GitHub** and **vendor websites**. Stay informed with **automated RSS feeds** and never miss an update.
+<div class="banner">
+  <!-- Your banner content here -->
+  <h1>Welcome to VersionPulse</h1>
+</div>
 
-### Latest RSS Feed
+VersionPulse is your go-to solution for tracking developer tool releases from **GitHub** and **Vendor WebSites**. Stay informed with **automated RSS feeds** and never miss an update.
 
 <h1>Latest RSS Feed</h1>
 <div id="rss-feed" class="rss-grid"></div>
