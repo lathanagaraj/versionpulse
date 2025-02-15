@@ -25,7 +25,7 @@ import (
 // const modelName = "deepseek/deepseek-r1:free"
 
 // Azure Open AI
-var apiKey = os.Getenv("VPAPI_KEY")
+var apiKey = os.Getenv("VP_API_KEY")
 
 const baseURL = "https://version-pulse.openai.azure.com"
 const modelName = "gpt-4o"

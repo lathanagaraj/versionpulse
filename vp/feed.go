@@ -40,7 +40,7 @@ func (f *ToolsFeed) ToRss() error {
 	}
 
 	// Convert feed to RSS format
-	rss, err := feed.ToRss()
+	rss, err := feed.ToJSON()
 	if err != nil {
 		return fmt.Errorf("error generating RSS: %v", err)
 	}

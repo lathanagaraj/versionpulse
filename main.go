@@ -12,7 +12,7 @@ func main() {
 func checkToolVersions() {
 	tools, err := vp.Load()
 	if err != nil {
-		log.Fatal("Error loading tools: %v", err)
+		log.Fatalf("Error loading tools: %v", err)
 		return
 	}
 
@@ -38,7 +38,7 @@ func checkToolVersions() {
 	}
 
 	if err := vp.NewToolsFeed(toolVersions).ToRss(); err != nil {
-		log.Fatal("Error generating RSS feed: %v", err)
+		log.Fatalf("Error generating RSS feed: %v", err)
 	}
 
 }
