@@ -17,11 +17,13 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
 VersionPulse is your go-to solution for tracking developer tool releases from **GitHub** and **vendor websites**. Stay informed with **automated RSS feeds** and never miss an update.
 
 ### Latest RSS Feed
+
+<h1>Latest RSS Feed</h1>
 <div id="rss-feed" class="rss-grid"></div>
 
 <script>
     // Replace with your RSS feed URL
-    const rssUrl = 'https://rss2json.com/api.json?rss_url=https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json';
+    const rssUrl = 'https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json';
 
     // Fetch RSS feed data and display it
     fetch(rssUrl)
