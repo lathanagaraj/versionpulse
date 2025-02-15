@@ -8,16 +8,27 @@ import (
 	"log"
 	"net/http"
 	"strings"
+	"time"
 
 	"text/template"
 
 	"github.com/PuerkitoBio/goquery"
+	"github.com/hashicorp/go-retryablehttp"
 	openai "github.com/sashabaranov/go-openai"
 	"gopkg.in/yaml.v2"
 )
 
-const apiKey = ""
-const baseURL = "https://router.huggingface.co/together"
+// Hugging facse
+// const baseURL = "https://router.huggingface.co/together"
+// const modelName = "deepseek-ai/DeepSeek-R1"
+
+// Open router
+// const baseURL = "https://openrouter.ai/api/v1"
+// const modelName = "deepseek/deepseek-r1:free"
+
+// Azure Open AI
+const baseURL = "https://version-pulse.openai.azure.com"
+const modelName = "gpt-4o"
 
 type Tool struct {
 	Name string `yaml:"name"`
@@ -64,10 +75,7 @@ func queryLLM(apiKey, baseURL, toolName, extractedText string) (string, error) {
 		return "", err
 	}
 
-	// Configure OpenAI client with custom base URL
-	defaultConfig := openai.DefaultConfig(apiKey)
-	defaultConfig.BaseURL = baseURL
-	client := openai.NewClientWithConfig(defaultConfig)
+	client := openai.NewClientWithConfig(*createAzureClient())
 
 	// Define chat messages
 	messages := []openai.ChatCompletionMessage{
@@ -91,12 +99,12 @@ You are a helpful assistant that only responds in valid JSON format.
 	resp, err := client.CreateChatCompletion(
 		context.Background(),
 		openai.ChatCompletionRequest{
-			Model:    "deepseek-ai/DeepSeek-R1", // Specify the Hugging Face model
+			Model:    modelName,
 			Messages: messages,
 			ResponseFormat: &openai.ChatCompletionResponseFormat{
 				Type: openai.ChatCompletionResponseFormatTypeJSONObject,
 			},
-			MaxTokens:   500,
+			MaxTokens:   50,
 			N:           1,
 			Temperature: 0,
 		},
@@ -162,7 +170,14 @@ func checkToolVersions() {
 		}
 
 		response, err := queryLLM(apiKey, baseURL, tool.Name, siteContent)
+		if err != nil {
+			log.Printf("Error querying LLM: %v", err)
+		}
 		result, err := extractJSONObject(response)
+
+		if err != nil {
+			log.Printf("Error extracting JSON object: %v", err)
+		}
 
 		println("result " + result)
 	}
@@ -189,4 +204,36 @@ func extractJSONObject(text string) (string, error) {
 func main() {
 
 	checkToolVersions()
+
+}
+
+func createAzureClient() *openai.ClientConfig {
+	config := openai.DefaultAzureConfig(apiKey, baseURL)
+	config.APIType = openai.APITypeAzure
+	config.APIVersion = "2024-08-01-preview"
+	config.AzureModelMapperFunc = func(model string) string {
+		azureModelMapping := map[string]string{
+			"gpt-4o": model,
+		}
+		return azureModelMapping[model]
+	}
+	config.HTTPClient = createhttpClient()
+	return &config
+}
+
+func createClient() *openai.ClientConfig {
+	config := openai.DefaultConfig(apiKey)
+	config.BaseURL = baseURL
+	return &config
+}
+
+func createhttpClient() *http.Client {
+	// Configure retryable HTTP client
+	retryClient := retryablehttp.NewClient()
+	retryClient.RetryMax = 5
+	retryClient.RetryWaitMin = 2 * time.Second
+	retryClient.RetryWaitMax = 10 * time.Second
+	retryClient.CheckRetry = retryablehttp.DefaultRetryPolicy // Automatic handling of 429 errors
+
+	return retryClient.StandardClient()
 }
