@@ -12,15 +12,18 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
 </head>
   
 
-<div class="banner">
-  <!-- Your banner content here -->
+<header class="banner">
   <h1>VersionPulse</h1>
+</header>
+
+<div class="intro">
+  <p>VersionPulse is your go-to solution for tracking developer tool releases from <strong>GitHub</strong> and <strong>Vendor Websites</strong>. Stay informed with <strong>automated RSS feeds</strong> and never miss an update.</p>
 </div>
 
-VersionPulse is your go-to solution for tracking developer tool releases from **GitHub** and **Vendor WebSites**. Stay informed with **automated RSS feeds** and never miss an update.
-
-<h2>Latest Releases</h2>
-<div id="rss-feed" class="rss-grid"></div>
+<section class="scrollable-section">
+  <h2>Latest Releases</h2>
+  <div id="rss-feed" class="rss-grid"></div>
+</section>
 
 <script>
     // Replace with your RSS feed URL
@@ -36,7 +39,7 @@ VersionPulse is your go-to solution for tracking developer tool releases from **
                 feedItem.classList.add('rss-item');
                 feedItem.innerHTML = `
                     <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
-                    <p>${item.description}</p>
+                    <p>${item.summary}</p>
                 `;
                 feedContainer.appendChild(feedItem);
             });
