@@ -31,6 +31,8 @@ func checkToolVersions() {
 			log.Printf("Error extracting JSON object: %v", err)
 			continue
 		}
+		//time.Sleep(10 * time.Second)
+
 		toolVersion.Link = tool.URL
 		toolVersions = append(toolVersions, *toolVersion)
 

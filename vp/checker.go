@@ -96,7 +96,27 @@ func createhttpClient() *http.Client {
 	retryClient.RetryWaitMax = 10 * time.Second
 	retryClient.CheckRetry = retryablehttp.DefaultRetryPolicy // Automatic handling of 429 errors
 
+	retryClient.CheckRetry = customCheckRetry
+
 	return retryClient.StandardClient()
+}
+
+func customCheckRetry(ctx context.Context, resp *http.Response, err error) (bool, error) {
+	if err != nil {
+		return true, err
+	}
+
+	if resp.StatusCode == http.StatusTooManyRequests { // 429 Too Many Requests
+		retryAfter := resp.Header.Get("Retry-After")
+		if retryAfter != "" {
+			duration, err := time.ParseDuration(retryAfter + "s")
+			if err == nil && duration > 1*time.Minute { // Cap retry delay at 5 minutes
+				return false, nil // Stop retrying after 5 minutes max
+			}
+		}
+	}
+
+	return retryablehttp.DefaultRetryPolicy(ctx, resp, err) // Default retry behavior
 }
 
 // Queries an LLM using OpenAI client with a custom base URL
@@ -113,14 +133,8 @@ func queryLLM(toolName, extractedText string) (string, error) {
 	// Define chat messages
 	messages := []openai.ChatCompletionMessage{
 		{
-			Role: openai.ChatMessageRoleSystem,
-			Content: `
-You are a helpful assistant that only responds in valid JSON format.
-**Rules:**
-1. Your response must **strictly** be in valid JSON format and nothing else.
-2. Do not include any additional explanations or text in your response.
-3. If the version or date cannot be found, return an empty JSON with the attributes set to null.
-			`,
+			Role:    openai.ChatMessageRoleSystem,
+			Content: "You are a helpful assistant that only responds in valid JSON format.",
 		},
 		{
 			Role:    openai.ChatMessageRoleUser,

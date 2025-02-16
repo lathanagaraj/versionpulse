@@ -4,8 +4,5 @@ Provide the latest stable version for the tool in **strict JSON format** without
     "version": "version",
     "date": "date"
 }
-
-What is the latest stable version of the tool {{.Tool}} based on the Webpage Content provided ? 
-
 Webpage Content:
 {{ .WebContent }}

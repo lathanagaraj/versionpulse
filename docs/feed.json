@@ -6,10 +6,346 @@
   "items": [
     {
       "id": "",
+      "url": "https://www.7-zip.org/download.html",
+      "title": "7zip",
+      "summary": "7zip 24.09 2024-11-29",
+      "date_published": "2025-02-15T21:50:28.04925-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/aws/aws-cli/releases",
+      "title": "awscli2",
+      "summary": "awscli2 2.0.0dev0 26 Nov 06:25",
+      "date_published": "2025-02-15T21:50:28.049256-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://docs.microsoft.com/en-us/cli/azure/install-azure-cli",
+      "title": "azurecli",
+      "summary": "azurecli 2.69.0 2025-02-03",
+      "date_published": "2025-02-15T21:50:28.049258-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/Azure/bicep/releases",
+      "title": "bicepcli",
+      "summary": "bicepcli v0.33.93 2025-01-30",
+      "date_published": "2025-02-15T21:50:28.049259-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/usebruno/bruno/releases",
+      "title": "bruno",
+      "summary": "bruno v1.39.0 2025-02-14",
+      "date_published": "2025-02-15T21:50:28.04926-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/chrisant996/clink/releases",
+      "title": "clink",
+      "summary": "clink v1.7.10 2023-02-07",
+      "date_published": "2025-02-15T21:50:28.049262-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://dbeaver.io/download/",
+      "title": "dbeaver",
+      "summary": "dbeaver 24.3.4 February 2nd, 2025",
+      "date_published": "2025-02-15T21:50:28.049263-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/wagoodman/dive/releases",
+      "title": "dive",
+      "summary": "dive v0.12.0 2024-02-02",
+      "date_published": "2025-02-15T21:50:28.049264-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/jgraph/drawio-desktop/releases",
+      "title": "drawio",
+      "summary": "drawio 26.0.9 2025-01-27",
+      "date_published": "2025-02-15T21:50:28.049266-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/etlp/etlp2pcapng/releases",
+      "title": "etlp2pcapng",
+      "summary": "etlp2pcapng not_found not_found",
+      "date_published": "2025-02-15T21:50:28.049268-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://ffmpeg.org/download.html",
+      "title": "ffmpeg",
+      "summary": "ffmpeg 7.1 2024-09-30",
+      "date_published": "2025-02-15T21:50:28.04927-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/kris-nova/kubicorn/releases",
+      "title": "gateway",
+      "summary": "gateway unstable-alpha 2025-03-07",
+      "date_published": "2025-02-15T21:50:28.049273-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://gitforwindows.org/",
+      "title": "git-win",
+      "summary": "git-win 2.48.1 ",
+      "date_published": "2025-02-15T21:50:28.049274-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/profclems/glab/releases",
+      "title": "gitlab-cli",
+      "summary": "gitlab-cli v1.22.0 2022-01-10",
+      "date_published": "2025-02-15T21:50:28.049275-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/gitlab-org/cli/releases",
+      "title": "gitlab-releaser-cli",
+      "summary": "gitlab-releaser-cli  ",
+      "date_published": "2025-02-15T21:50:28.049277-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://docs.gitlab.com/runner/releases/",
+      "title": "gitlab-runner-agent",
+      "summary": "gitlab-runner-agent  ",
+      "date_published": "2025-02-15T21:50:28.049278-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/helm/helm/releases",
+      "title": "helm",
+      "summary": "helm v3.17.1 2025-02-12T20:23:51Z",
+      "date_published": "2025-02-15T21:50:28.049279-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://inkscape.org/release/",
+      "title": "inkscape",
+      "summary": "inkscape 1.4 2024-10-13",
+      "date_published": "2025-02-15T21:50:28.049282-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.jetbrains.com/idea/download/",
+      "title": "intellij-idea-ultimate",
+      "summary": "intellij-idea-ultimate 2021.1 2021-06-01T09:00",
+      "date_published": "2025-02-15T21:50:28.049283-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://jmeter.apache.org/download_jmeter.cgi",
+      "title": "jmeter",
+      "summary": "jmeter 5.6.3 ",
+      "date_published": "2025-02-15T21:50:28.049284-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/stedolan/jq/releases",
+      "title": "jq",
+      "summary": "jq 1.7.1 2023-12-13",
+      "date_published": "2025-02-15T21:50:28.049285-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://kubernetes.io/releases/",
+      "title": "kubectl",
+      "summary": "kubectl 1.32.2 2025-02-11",
+      "date_published": "2025-02-15T21:50:28.049286-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://gnuwin32.sourceforge.net/packages/make.htm",
+      "title": "make-win",
+      "summary": "make-win 3.81 2006-11-25",
+      "date_published": "2025-02-15T21:50:28.049287-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://maven.apache.org/download.cgi",
+      "title": "maven",
+      "summary": "maven 3.9.9 2025-02-15",
+      "date_published": "2025-02-15T21:50:28.049289-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://docs.conda.io/en/latest/miniconda.html",
+      "title": "miniconda",
+      "summary": "miniconda py310_23.5.2-1 2023-05-15",
+      "date_published": "2025-02-15T21:50:28.04929-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://nodejs.org/en/download/releases/",
+      "title": "node16",
+      "summary": "node16 v16.20.2 2023-08-08",
+      "date_published": "2025-02-15T21:50:28.049291-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://nodejs.org/en/download/releases/",
+      "title": "node18",
+      "summary": "node18 18.20.6 2025-01-21",
+      "date_published": "2025-02-15T21:50:28.049292-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://nodejs.org/en/download/releases/",
+      "title": "node20",
+      "summary": "node20 v20.18.3 2025-02-10",
+      "date_published": "2025-02-15T21:50:28.049293-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://nodejs.org/en/download/releases/",
+      "title": "node22",
+      "summary": "node22 v22.14.0 2025-02-11",
+      "date_published": "2025-02-15T21:50:28.049294-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://notepad-plus-plus.org/downloads/",
+      "title": "notepad-plus-plus",
+      "summary": "notepad-plus-plus 8.7.7 ",
+      "date_published": "2025-02-15T21:50:28.049295-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html",
+      "title": "oraclejdk11",
+      "summary": "oraclejdk11 11.0.25 2019-03-04",
+      "date_published": "2025-02-15T21:50:28.049296-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html",
+      "title": "oraclejdk17",
+      "summary": "oraclejdk17 17.0.12 2023-10-04",
+      "date_published": "2025-02-15T21:50:28.049297-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html",
+      "title": "oraclejdk21",
+      "summary": "oraclejdk21 21.0.5 ",
+      "date_published": "2025-02-15T21:50:28.049298-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html",
+      "title": "oraclejdk8",
+      "summary": "oraclejdk8 8u202 2019-03-04",
+      "date_published": "2025-02-15T21:50:28.049302-05:00"
+    },
+    {
+      "id": "",
       "url": "https://github.com/PowerShell/PowerShell/releases",
       "title": "powershell",
       "summary": "powershell 7.5.0 2025-01-23T20:15:46Z",
-      "date_published": "2025-02-15T11:47:14.47971-05:00"
+      "date_published": "2025-02-15T21:50:28.049304-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html",
+      "title": "putty",
+      "summary": "putty 0.83 2025-02-08",
+      "date_published": "2025-02-15T21:50:28.049305-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.python.org/downloads/release/python-3100/",
+      "title": "python310",
+      "summary": "python310 3.10.0 2021-10-04",
+      "date_published": "2025-02-15T21:50:28.049306-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.python.org/downloads/release/python-3110/",
+      "title": "python311",
+      "summary": "python311 3.11.0 2022-10-24",
+      "date_published": "2025-02-15T21:50:28.049307-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.python.org/downloads/release/python-3120/",
+      "title": "python312",
+      "summary": "python312 3.12.0 2023-10-02",
+      "date_published": "2025-02-15T21:50:28.049308-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.python.org/downloads/release/python-390/",
+      "title": "python39",
+      "summary": "python39 3.9.0 2020-10-05",
+      "date_published": "2025-02-15T21:50:28.049309-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.jetbrains.com/rider/download/",
+      "title": "rider",
+      "summary": "rider 2024.3 2023-10-01",
+      "date_published": "2025-02-15T21:50:28.04931-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.screentogif.com/",
+      "title": "screentogif",
+      "summary": "screentogif 2.40 2023-12-06",
+      "date_published": "2025-02-15T21:50:28.049311-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/go-task/task/releases",
+      "title": "task",
+      "summary": "task v3.41.0 2025-01-18",
+      "date_published": "2025-02-15T21:50:28.049312-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/hashicorp/terraform/releases",
+      "title": "terraform",
+      "summary": "terraform 1.10.5 2025-01-22",
+      "date_published": "2025-02-15T21:50:28.049313-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://code.visualstudio.com/updates",
+      "title": "vscode",
+      "summary": "vscode 1.97 January 2025",
+      "date_published": "2025-02-15T21:50:28.049314-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/microsoft/terminal/releases",
+      "title": "windows-terminal",
+      "summary": "windows-terminal 1.22.10352.0 06 Feb 00:50",
+      "date_published": "2025-02-15T21:50:28.049315-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/WinMerge/winmerge/releases",
+      "title": "winmerge",
+      "summary": "winmerge 2.16.46 2025-01-27",
+      "date_published": "2025-02-15T21:50:28.049316-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.wireshark.org/download.html",
+      "title": "wireshark",
+      "summary": "wireshark 4.4.3 ",
+      "date_published": "2025-02-15T21:50:28.049317-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/mikefarah/yq/releases",
+      "title": "yq",
+      "summary": "yq v4.45.1 2025-01-12",
+      "date_published": "2025-02-15T21:50:28.049318-05:00"
     }
   ]
 }
