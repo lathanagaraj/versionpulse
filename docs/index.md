@@ -4,14 +4,13 @@ author_profile: true
 title: "VersionPulse"
 description: "Track the latest developer tool releases with RSS feeds."
 header:
-  overlay_image: "/assets/banner.png"
   caption: "Stay ahead with real-time updates"
 excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS feed."
 ---
 <head>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
 </head>
-
+  
 
 <div class="banner">
   <!-- Your banner content here -->
