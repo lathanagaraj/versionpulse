@@ -18,7 +18,7 @@ func NewToolsFeed(toolVersions []ToolVersion) *ToolsFeed {
 	}
 }
 
-const feedname = "docs/feed.json"
+const feedname = "feed.json"
 
 func (f *ToolsFeed) ToRss() error {
 	// Create a new RSS feed
