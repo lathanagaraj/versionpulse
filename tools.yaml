@@ -4,7 +4,7 @@ tools:
   - name: awscli2
     url: https://raw.githubusercontent.com/aws/aws-cli/refs/heads/v2/CHANGELOG.rst
   - name: azurecli
-    url: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
+    url: https://github.com/azure/azure-cli/releases
   - name: bicepcli
     url: https://github.com/Azure/bicep/releases
   - name: bruno
