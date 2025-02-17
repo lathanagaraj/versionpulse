@@ -14,6 +14,8 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
   <h1>VersionPulse</h1>
   <div class="intro">
     <p>Track developer tool releases from <strong>GitHub</strong> and <strong>Vendor Websites</strong> with ease.</p>
+    <a href="https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/feed.json">RSS Feed</a>
+
   </div>
 </header>
 
@@ -78,6 +80,14 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
     display: block;
   }
 
+
+
+.rss-item {
+    flex: 1 1 20%; /* This means each item will take up 20% of the available width */
+    max-width: 20%; /* Optional, ensures each item doesn't exceed 20% */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
   #rss-feed {
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +97,8 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
   }
 
   .rss-item {
+    flex: 1 1 20%; /* This means each item will take up 20% of the available width */
+    max-width: 20%; /* Optional, ensures each item doesn't exceed 20% */
     width: 320px;
     display: flex;
     flex-direction: column;
@@ -102,11 +114,16 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
     font-size: 1.2em;
     margin-bottom: 10px;
     color: #3b007b;
-    text-align: left;
+    text-align: center;
   }
 
   .rss-item p {
     text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .rss-item h4 {
+    text-align: center;
     margin-bottom: 10px;
   }
 
@@ -165,7 +182,7 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
 </style>
 
 <!-- Toggle Button -->
-<button id="toggle-view">Switch to Table View</button>
+<!-- <button id="toggle-view">Switch to Table View</button> -->
 
 <!-- Cards Section -->
 <div id="rss-feed-container">
@@ -236,7 +253,7 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
 
         feedItem.innerHTML = `
           <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
-          <p>${item.summary}</p>
+          <h4>${item.summary}</h4>
           <p class="content">${item.content_html}</p>
           <p class="published">Published on: ${formatDate(item.date_published)}</p>
         `;
