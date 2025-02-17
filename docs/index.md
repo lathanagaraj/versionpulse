@@ -21,6 +21,9 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
   <div id="rss-feed-container">
     <div id="rss-feed" class="rss-grid"></div>
   </div>
+  <div id="rss-table-container">
+    <div id="rss-table" class="table"></div>
+  </div>
 </section>
 
 <style>
