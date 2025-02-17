@@ -96,7 +96,7 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
 
 <script>
     // Replace with your RSS feed URL
-    const rssUrl = 'https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json';
+    const rssUrl = 'https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/feed.json';
 
     // Fetch RSS feed data and display it
     fetch(rssUrl)
@@ -122,6 +122,6 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
 
 
 
-[JSON RSS Feed](https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json)
+[JSON RSS Feed](https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/feed.json)
 
 
