@@ -90,11 +90,10 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
   }
 
   .rss-item {
-    flex: 1 1 16.66%;  /* Each card takes up ~16.66% of the available width */
     width: 320px;  /* width of the card */
-    height: 350px;  /* set a fixed height for the card */
+    height: 450px;  /* set a fixed height for the card */
     overflow: hidden;  
-    max-width: 16.66%; /* Optional, ensures each item doesn't exceed 20% */
+    max-width: 30%; /* Optional, ensures each item doesn't exceed 20% */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
