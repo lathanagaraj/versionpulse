@@ -45,6 +45,10 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
     }
 
     /* Cards Layout */
+    #rss-feed-container {
+        display: block; /* Ensure the container is always visible */
+    }
+
     #rss-feed {
         display: flex;
         flex-wrap: wrap;
@@ -135,7 +139,9 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
 <button id="toggle-view">Switch to Table View</button>
 
 <!-- Cards Section -->
-<div id="rss-feed"></div>
+<div id="rss-feed-container">
+    <div id="rss-feed"></div>
+</div>
 
 <!-- Table Section -->
 <div id="rss-table-container">
@@ -145,7 +151,6 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
                 <th>Title</th>
                 <th>Summary</th>
                 <th>Content</th>
-                <th>Published Date</th>
             </tr>
         </thead>
         <tbody></tbody>
@@ -169,22 +174,22 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
 
     // Toggle between Card and Table view
     document.getElementById("toggle-view").addEventListener("click", function() {
-        const cardView = document.getElementById("rss-feed");
-        const tableView = document.getElementById("rss-table-container");
+        const cardContainer = document.getElementById("rss-feed-container");
+        const tableContainer = document.getElementById("rss-table-container");
 
-        if (cardView.style.display === "none") {
-            cardView.style.display = "flex";
-            tableView.style.display = "none";
+        if (cardContainer.style.display === "none") {
+            cardContainer.style.display = "block";
+            tableContainer.style.display = "none";
             this.textContent = "Switch to Table View";
         } else {
-            cardView.style.display = "none";
-            tableView.style.display = "block";
+            cardContainer.style.display = "none";
+            tableContainer.style.display = "block";
             this.textContent = "Switch to Card View";
         }
     });
 
     // Replace with your RSS feed URL
-    const rssUrl = 'https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/feed.json';
+    const rssUrl = 'https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json';
 
     // Fetch RSS feed data and display it
     fetch(rssUrl)
