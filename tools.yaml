@@ -30,7 +30,7 @@ tools:
   - name: gateway
     url: https://github.com/kris-nova/kubicorn/releases
   - name: git-win
-    https://github.com/git-for-windows/git/releases
+    url: https://github.com/git-for-windows/git/releases
   - name: gitlab-cli
     url: https://github.com/profclems/glab/releases
   - name: gitlab-releaser-cli
