@@ -3,7 +3,7 @@ name: versionpulse-run
 on:
   schedule:
     - cron: '0 0 */2 * *'  # Runs at midnight UTC every 2 days
-
+  workflow_dispatch:
 
 jobs:
   build:
