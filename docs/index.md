@@ -60,6 +60,7 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
     margin-top: 120px; /* To make space for the fixed banner */
     padding: 20px;
     overflow-y: auto;
+    width: 100%
     height: calc(100vh - 120px); /* Allow scrolling for content */
   }
 
@@ -114,6 +115,7 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
   .rss-item p {
     text-align: left;
     margin-bottom: 10px;
+    font-size: medium
   }
 
   .rss-item h4 {
