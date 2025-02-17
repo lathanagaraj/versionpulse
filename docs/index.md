@@ -25,6 +25,67 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
   <div id="rss-feed" class="rss-grid"></div>
 </section>
 
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f6fa;
+    }
+
+    #rss-feed {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .rss-item {
+        width: 320px;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        overflow: hidden;
+    }
+
+    .rss-item h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #3b007b;
+    }
+
+    .rss-item p {
+        flex-grow: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Limits summary to 3 lines */
+        -webkit-box-orient: vertical;
+    }
+
+    .rss-item div.content {
+        flex-grow: 1;
+        overflow-y: auto; /* Allows scrolling inside the content if needed */
+        max-height: 100px;
+        padding: 5px;
+        border-top: 1px solid #ddd;
+        margin-top: 10px;
+    }
+
+    .rss-item a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #3b007b;
+    }
+
+</style>
+
+<div id="rss-feed"></div>
+
 <script>
     // Replace with your RSS feed URL
     const rssUrl = 'https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json';
@@ -40,7 +101,7 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
                 feedItem.innerHTML = `
                     <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
                     <p>${item.summary}</p>
-                    <div>${item.content_html}</div>
+                    <div class="content">${item.content_html}</div>
                 `;
                 feedContainer.appendChild(feedItem);
             });
@@ -49,6 +110,7 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
             console.error('Error fetching RSS feed:', error);
         });
 </script>
+
 
 [JSON RSS Feed](https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json)
 
