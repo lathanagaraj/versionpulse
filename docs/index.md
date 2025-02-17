@@ -10,126 +10,152 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
 <head>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
 </head>
-  
-
-<header class="banner">
+  <header class="banner">
   <h1>VersionPulse</h1>
   <div class="intro">
-  <p> Track developer tool releases from <strong>GitHub</strong> and <strong>Vendor Websites</strong> with ease.</p>
-</div>
+    <p>Track developer tool releases from <strong>GitHub</strong> and <strong>Vendor Websites</strong> with ease.</p>
+  </div>
 </header>
 
 <section class="scrollable-section">
-  <div id="rss-feed" class="rss-grid"></div>
+  <div id="rss-feed-container">
+    <div id="rss-feed" class="rss-grid"></div>
+  </div>
 </section>
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f6fa;
-        text-align: center;
-    }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    /* Toggle Button */
-    #toggle-view {
-        background-color: #3b007b;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 1em;
-        margin-bottom: 20px;
-    }
+  /* Fixed Banner */
+  .banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3b007b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 10;
+  }
 
-    /* Cards Layout */
-    #rss-feed-container {
-        display: block; /* Ensure the container is always visible */
-    }
+  .banner h1 {
+    margin: 0;
+  }
 
-    #rss-feed {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        align-items: stretch;
-        margin-bottom: 40px;
-    }
+  /* Scrollable Section */
+  .scrollable-section {
+    margin-top: 120px; /* To make space for the fixed banner */
+    padding: 20px;
+    overflow-y: auto;
+    height: calc(100vh - 120px); /* Allow scrolling for content */
+  }
 
-    .rss-item {
-        width: 320px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        border: 1px solid #ddd;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        background-color: white;
-    }
+  /* Toggle Button */
+  #toggle-view {
+    background-color: #3b007b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
 
-    .rss-item h3 {
-        font-size: 1.2em;
-        margin-bottom: 10px;
-        color: #3b007b;
-        text-align: left;
-    }
+  /* Cards Layout */
+  #rss-feed-container {
+    display: block;
+  }
 
-    .rss-item p {
-        text-align: left;
-        margin-bottom: 10px;
-    }
+  #rss-feed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+  }
 
-    .rss-item .content {
-        flex-grow: 1;
-        text-align: left;
-        color: #555;
-    }
+  .rss-item {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
 
-    .rss-item .published {
-        font-size: 0.9em;
-        color: #888;
-        margin-top: auto;
-        padding-top: 10px;
-        border-top: 1px solid #eee;
-    }
+  .rss-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #3b007b;
+    text-align: left;
+  }
 
-    .rss-item a {
-        text-decoration: none;
-        font-weight: bold;
-        color: #3b007b;
-    }
+  .rss-item p {
+    text-align: left;
+    margin-bottom: 10px;
+  }
 
-    /* Table Layout */
-    #rss-table-container {
-        width: 90%;
-        margin: 0 auto;
-        display: none; /* Initially hidden */
-    }
+  .rss-item .content {
+    flex-grow: 1;
+    text-align: left;
+    color: #555;
+  }
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        background: white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    }
+  .rss-item .published {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+  }
 
-    th, td {
-        border: 1px solid #ddd;
-        padding: 10px;
-        text-align: left;
-    }
+  .rss-item a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3b007b;
+  }
 
-    th {
-        background-color: #3b007b;
-        color: white;
-    }
+  /* Table Layout */
+  #rss-table-container {
+    width: 90%;
+    margin: 0 auto;
+    display: none; /* Initially hidden */
+  }
 
-    tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #3b007b;
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
 
 </style>
 
@@ -138,103 +164,103 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
 
 <!-- Cards Section -->
 <div id="rss-feed-container">
-    <div id="rss-feed"></div>
+  <div id="rss-feed"></div>
 </div>
 
 <!-- Table Section -->
 <div id="rss-table-container">
-    <table id="rss-table">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Summary</th>
-                <th>Content</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+  <table id="rss-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Summary</th>
+        <th>Content</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
 </div>
 
 <script>
-    // Function to format the published date into a readable format
-    function formatDate(isoString) {
-        const date = new Date(isoString);
-        return date.toLocaleString('en-US', {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            hour: 'numeric',
-            minute: '2-digit',
-            hour12: true
-        });
-    }
-
-    // Toggle between Card and Table view
-    document.getElementById("toggle-view").addEventListener("click", function() {
-        const cardContainer = document.getElementById("rss-feed-container");
-        const tableContainer = document.getElementById("rss-table-container");
-
-        if (cardContainer.style.display === "none") {
-            cardContainer.style.display = "block";
-            tableContainer.style.display = "none";
-            this.textContent = "Switch to Table View";
-        } else {
-            cardContainer.style.display = "none";
-            tableContainer.style.display = "block";
-            this.textContent = "Switch to Card View";
-        }
+  // Function to format the published date into a readable format
+  function formatDate(isoString) {
+    const date = new Date(isoString);
+    return date.toLocaleString('en-US', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true
     });
+  }
 
-    // Replace with your RSS feed URL
-    const rssUrl = 'https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/feed.json';
+  // Toggle between Card and Table view
+  document.getElementById("toggle-view").addEventListener("click", function() {
+    const cardContainer = document.getElementById("rss-feed-container");
+    const tableContainer = document.getElementById("rss-table-container");
 
-    // Fetch RSS feed data and display it
-    fetch(rssUrl)
-        .then(response => response.json())
-        .then(data => {
-            const feedContainer = document.getElementById('rss-feed');
-            const tableBody = document.querySelector("#rss-table tbody");
+    if (cardContainer.style.display === "none") {
+      cardContainer.style.display = "block";
+      tableContainer.style.display = "none";
+      this.textContent = "Switch to Table View";
+    } else {
+      cardContainer.style.display = "none";
+      tableContainer.style.display = "block";
+      this.textContent = "Switch to Card View";
+    }
+  });
 
-            let maxHeight = 0; // Track max height
+  // Replace with your RSS feed URL
+  const rssUrl = 'https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/feed.json';
 
-            data.items.forEach(item => {
-                // Create card layout
-                const feedItem = document.createElement('div');
-                feedItem.classList.add('rss-item');
+  // Fetch RSS feed data and display it
+  fetch(rssUrl)
+    .then(response => response.json())
+    .then(data => {
+      const feedContainer = document.getElementById('rss-feed');
+      const tableBody = document.querySelector("#rss-table tbody");
 
-                feedItem.innerHTML = `
-                    <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
-                    <p>${item.summary}</p>
-                    <p class="content">${item.content_html}</p>
-                    <p class="published">Published on: ${formatDate(item.date_published)}</p>
-                `;
-                feedContainer.appendChild(feedItem);
+      let maxHeight = 0; // Track max height
 
-                // Update maxHeight based on the tallest card
-                if (feedItem.clientHeight > maxHeight) {
-                    maxHeight = feedItem.clientHeight;
-                }
+      data.items.forEach(item => {
+        // Create card layout
+        const feedItem = document.createElement('div');
+        feedItem.classList.add('rss-item');
 
-                // Create table row
-                const row = document.createElement("tr");
-                row.innerHTML = `
-                    <td><a href="${item.url}" target="_blank">${item.title}</a></td>
-                    <td>${item.summary}</td>
-                    <td>${item.content_html}</td>
-                    <td>${formatDate(item.date_published)}</td>
-                `;
-                tableBody.appendChild(row);
-            });
+        feedItem.innerHTML = `
+          <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
+          <p>${item.summary}</p>
+          <p class="content">${item.content_html}</p>
+          <p class="published">Published on: ${formatDate(item.date_published)}</p>
+        `;
+        feedContainer.appendChild(feedItem);
 
-            // Apply maxHeight to all cards
-            document.querySelectorAll('.rss-item').forEach(item => {
-                item.style.height = maxHeight + 'px';
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching RSS feed:', error);
-        });
+        // Update maxHeight based on the tallest card
+        if (feedItem.clientHeight > maxHeight) {
+          maxHeight = feedItem.clientHeight;
+        }
+
+        // Create table row
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td><a href="${item.url}" target="_blank">${item.title}</a></td>
+          <td>${item.summary}</td>
+          <td>${item.content_html}</td>
+          <td>${formatDate(item.date_published)}</td>
+        `;
+        tableBody.appendChild(row);
+      });
+
+      // Apply maxHeight to all cards
+      document.querySelectorAll('.rss-item').forEach(item => {
+        item.style.height = maxHeight + 'px';
+      });
+    })
+    .catch(error => {
+      console.error('Error fetching RSS feed:', error);
+    });
 </script>
 
 
