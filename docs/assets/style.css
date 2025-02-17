@@ -118,44 +118,46 @@ h1 {
   margin-top: 30px;
 }
 
-.rss-item {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 20px;
-  cursor: pointer;
-}
+  
 
-.rss-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-}
+  .rss-item {
+      width: 300px; /* Set a fixed width */
+      height: 400px; /* Set a fixed height */
+      overflow: hidden; /* Hide overflowing content */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+  }
 
-.rss-item h3 {
-  font-size: 1.25rem;
-  color: #0077cc;
-  margin-bottom: 10px;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
+  .rss-item h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+  }
 
-.rss-item h3 a {
-  text-decoration: none;
-  color: inherit;
-}
+  .rss-item p {
+      flex-grow: 1; /* Allows summary to take available space */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
 
-.rss-item h3 a:hover {
-  color: #005fa3;
-}
+  .rss-item div {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
 
-.rss-item p {
-  font-size: 0.9rem;
-  color: #555;
-  line-height: 1.5;
-  margin-top: 10px;
-}
+  #rss-feed {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+  }
 
 @media (max-width: 768px) {
   .rss-grid {

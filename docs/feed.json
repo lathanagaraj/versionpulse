@@ -1,15 +1,445 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Latest Tool Versions",
-  "home_page_url": "https://example.com",
+  "home_page_url": "https://lathanagaraj.github.io/versionpulse/",
   "description": "Latest Tool Versions RSS feed",
   "items": [
     {
       "id": "",
+      "url": "https://www.7-zip.org/download.html",
+      "title": "7zip",
+      "content_html": "Version24.09 published on 2024-11-29. With change summary: This release includes updates and improvements for various system types, providing enhanced compatibility and performance.",
+      "summary": "24.09",
+      "date_published": "2025-02-16T21:25:19.175815-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://raw.githubusercontent.com/aws/aws-cli/refs/heads/v2/CHANGELOG.rst",
+      "title": "awscli2",
+      "content_html": "Version2.24.5 published on 2023-10-15. With change summary: Latest release includes support for Content-Range in S3, ListAnalyticsDataLakeDataSets API for Connect, and data protection configuration for WAFv2.",
+      "summary": "2.24.5",
+      "date_published": "2025-02-16T21:25:19.175822-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://docs.microsoft.com/en-us/cli/azure/install-azure-cli",
+      "title": "azurecli",
+      "content_html": "Version2.69.0 published on 2025-02-03. With change summary: The latest version of Azure CLI introduces compatibility improvements and ensures smoother user experience across all supported environments.",
+      "summary": "2.69.0",
+      "date_published": "2025-02-16T21:25:19.175825-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/Azure/bicep/releases",
+      "title": "bicepcli",
+      "content_html": "Versionv0.33.93 published on 2025-01-29. With change summary: Addresses a language server crash, deployment failures with non-symbolic names, and releases the Deployment Pane as a stable feature.",
+      "summary": "v0.33.93",
+      "date_published": "2025-02-16T21:25:19.175826-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/chrisant996/clink/releases",
+      "title": "clink",
+      "content_html": "Versionv1.7.10 published on 2023-02-07. With change summary: Added new Lua API unicode.char() for Unicode codepoints. Introduced a diagnostic command to simplify troubleshooting. Fixed a regression causing crashes with certain console window widths.",
+      "summary": "v1.7.10",
+      "date_published": "2025-02-16T21:25:19.175828-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://dbeaver.io/download/",
+      "title": "dbeaver",
+      "content_html": "Version24.3.5 published on 2025-02-16. With change summary: ",
+      "summary": "24.3.5",
+      "date_published": "2025-02-16T21:25:19.17583-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/wagoodman/dive/releases",
+      "title": "dive",
+      "content_html": "Version0.12.0 published on 2024-02-02. With change summary: ",
+      "summary": "0.12.0",
+      "date_published": "2025-02-16T21:25:19.175832-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://docs.docker.com/desktop/release-notes/",
+      "title": "docker-desktop",
+      "content_html": "Version4.38.0 published on 2025-01-30. With change summary: ",
+      "summary": "4.38.0",
+      "date_published": "2025-02-16T21:25:19.175833-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://dotnet.microsoft.com/download/dotnet/6.0",
+      "title": "dotnet6",
+      "content_html": "Version6.0.36 published on November 12, 2024. With change summary: ",
+      "summary": "6.0.36",
+      "date_published": "2025-02-16T21:25:19.175834-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://dotnet.microsoft.com/download/dotnet/8.0",
+      "title": "dotnet8",
+      "content_html": "Version8.0.13 published on February 11, 2025. With change summary: ",
+      "summary": "8.0.13",
+      "date_published": "2025-02-16T21:25:19.175837-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/jgraph/drawio-desktop/releases",
+      "title": "drawio",
+      "content_html": "Version26.0.9 published on 2025-01-27T12:07:23Z. With change summary: ",
+      "summary": "26.0.9",
+      "date_published": "2025-02-16T21:25:19.175838-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/etlp/etlp2pcapng/releases",
+      "title": "etlp2pcapng",
+      "content_html": "Version published on . With change summary: ",
+      "date_published": "2025-02-16T21:25:19.175839-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://ffmpeg.org/download.html",
+      "title": "ffmpeg",
+      "content_html": "Version7.1 published on 2024-09-30. With change summary: ",
+      "summary": "7.1",
+      "date_published": "2025-02-16T21:25:19.17584-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/kris-nova/kubicorn/releases",
+      "title": "gateway",
+      "content_html": "Versionunstable-alpha published on 07 Mar. With change summary: ",
+      "summary": "unstable-alpha",
+      "date_published": "2025-02-16T21:25:19.175842-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://gitforwindows.org/",
+      "title": "git-win",
+      "content_html": "Version2.48.1 published on . With change summary: ",
+      "summary": "2.48.1",
+      "date_published": "2025-02-16T21:25:19.175843-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/profclems/glab/releases",
+      "title": "gitlab-cli",
+      "content_html": "Versionv1.22.0 published on 2022-01-10T13:32:44Z. With change summary: ",
+      "summary": "v1.22.0",
+      "date_published": "2025-02-16T21:25:19.175844-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/gitlab-org/cli/releases",
+      "title": "gitlab-releaser-cli",
+      "content_html": "Versionnot_found published on not_found. With change summary: ",
+      "summary": "not_found",
+      "date_published": "2025-02-16T21:25:19.175845-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://docs.gitlab.com/runner/releases/",
+      "content_html": "Version published on . With change summary: ",
+      "date_published": "2025-02-16T21:25:19.175848-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://golang.org/dl/",
+      "title": "golang",
+      "content_html": "Version1.24.0 published on . With change summary: ",
+      "summary": "1.24.0",
+      "date_published": "2025-02-16T21:25:19.175849-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://golang.org/dl/",
+      "title": "golang1.22",
+      "content_html": "Versiongo1.24.0 published on Unavailable. With change summary: ",
+      "summary": "go1.24.0",
+      "date_published": "2025-02-16T21:25:19.17585-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://golang.org/dl/",
+      "title": "golang1.23",
+      "content_html": "Versiongo1.23.6 published on Not provided in the content. With change summary: ",
+      "summary": "go1.23.6",
+      "date_published": "2025-02-16T21:25:19.175851-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/helm/helm/releases",
+      "title": "helm",
+      "content_html": "Version3.17.1 published on 2025-02-12. With change summary: ",
+      "summary": "3.17.1",
+      "date_published": "2025-02-16T21:25:19.175853-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://inkscape.org/release/",
+      "title": "inkscape",
+      "content_html": "Version1.4 published on 2024-10-13. With change summary: ",
+      "summary": "1.4",
+      "date_published": "2025-02-16T21:25:19.175854-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.jetbrains.com/idea/download/",
+      "title": "intellij-idea-ultimate",
+      "content_html": "Versionunknown published on unknown. With change summary: ",
+      "summary": "unknown",
+      "date_published": "2025-02-16T21:25:19.175855-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://jmeter.apache.org/download_jmeter.cgi",
+      "title": "jmeter",
+      "content_html": "Version5.6.3 published on 2024. With change summary: ",
+      "summary": "5.6.3",
+      "date_published": "2025-02-16T21:25:19.175856-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/stedolan/jq/releases",
+      "title": "jq",
+      "content_html": "Version1.7.1 published on 2023-12-13. With change summary: ",
+      "summary": "1.7.1",
+      "date_published": "2025-02-16T21:25:19.175857-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://kubernetes.io/releases/",
+      "title": "kubectl",
+      "content_html": "Version1.32.2 published on 2025-02-11. With change summary: ",
+      "summary": "1.32.2",
+      "date_published": "2025-02-16T21:25:19.175858-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://gnuwin32.sourceforge.net/packages/make.htm",
+      "title": "make-win",
+      "content_html": "Version3.81 published on 25 November 2006. With change summary: ",
+      "summary": "3.81",
+      "date_published": "2025-02-16T21:25:19.17586-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://maven.apache.org/download.cgi",
+      "title": "maven",
+      "content_html": "Version3.9.9 published on 2025-02-16. With change summary: ",
+      "summary": "3.9.9",
+      "date_published": "2025-02-16T21:25:19.175861-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://docs.anaconda.com/miniconda/release-notes/",
+      "title": "miniconda",
+      "content_html": "Version25.1.1-2 published on 2025-02-11. With change summary: ",
+      "summary": "25.1.1-2",
+      "date_published": "2025-02-16T21:25:19.175862-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://nodejs.org/en/download/releases/",
+      "title": "node16",
+      "content_html": "Version16.20.2 published on 2023-08-08. With change summary: ",
+      "summary": "16.20.2",
+      "date_published": "2025-02-16T21:25:19.175863-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://nodejs.org/en/download/releases/",
+      "title": "node18",
+      "content_html": "Versionv18.20.6 published on 2025-01-21. With change summary: ",
+      "summary": "v18.20.6",
+      "date_published": "2025-02-16T21:25:19.175864-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://nodejs.org/en/download/releases/",
+      "title": "node20",
+      "content_html": "Version20.18.3 published on 2025-02-10. With change summary: ",
+      "summary": "20.18.3",
+      "date_published": "2025-02-16T21:25:19.175865-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://nodejs.org/en/download/releases/",
+      "title": "node22",
+      "content_html": "Versionv22.14.0 published on 2025-02-11. With change summary: ",
+      "summary": "v22.14.0",
+      "date_published": "2025-02-16T21:25:19.175869-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://notepad-plus-plus.org/index.xml",
+      "title": "notepad-plus-plus",
+      "content_html": "Versionv8.7.7 published on 2025-02-07. With change summary: ",
+      "summary": "v8.7.7",
+      "date_published": "2025-02-16T21:25:19.17587-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/openshift/okd/releases",
+      "title": "openshift",
+      "content_html": "Version4.17.0-okd-scos.0 published on 2024-12-16T20:50:56Z. With change summary: ",
+      "summary": "4.17.0-okd-scos.0",
+      "date_published": "2025-02-16T21:25:19.175871-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html",
+      "title": "oraclejdk11",
+      "content_html": "Version11.0.25 published on 2019-03-04. With change summary: ",
+      "summary": "11.0.25",
+      "date_published": "2025-02-16T21:25:19.175872-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html",
+      "title": "oraclejdk17",
+      "content_html": "Version17.0.12 published on unknown. With change summary: ",
+      "summary": "17.0.12",
+      "date_published": "2025-02-16T21:25:19.175873-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html",
+      "title": "oraclejdk21",
+      "content_html": "Version21.0.5 published on 2023-10-25. With change summary: ",
+      "summary": "21.0.5",
+      "date_published": "2025-02-16T21:25:19.175874-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html",
+      "title": "oraclejdk8",
+      "content_html": "Version8u202 published on 2019-03-04. With change summary: ",
+      "summary": "8u202",
+      "date_published": "2025-02-16T21:25:19.175875-05:00"
+    },
+    {
+      "id": "",
       "url": "https://github.com/PowerShell/PowerShell/releases",
       "title": "powershell",
-      "summary": "powershell 7.5.0 2025-01-23T20:15:46Z",
-      "date_published": "2025-02-15T11:47:14.47971-05:00"
+      "content_html": "Version7.5.0 published on 2025-01-23T20:15:46Z. With change summary: ",
+      "summary": "7.5.0",
+      "date_published": "2025-02-16T21:25:19.175876-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html",
+      "title": "putty",
+      "content_html": "Version0.83 published on 2025-02-08. With change summary: ",
+      "summary": "0.83",
+      "date_published": "2025-02-16T21:25:19.17588-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.python.org/downloads/release/python-3100/",
+      "title": "python310",
+      "content_html": "Version3.10.0 published on 2021-10-04. With change summary: ",
+      "summary": "3.10.0",
+      "date_published": "2025-02-16T21:25:19.175881-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.python.org/downloads/release/python-3110/",
+      "title": "python311",
+      "content_html": "Version3.11.0 published on 2022-10-24. With change summary: ",
+      "summary": "3.11.0",
+      "date_published": "2025-02-16T21:25:19.175882-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.python.org/downloads/release/python-3120/",
+      "title": "python312",
+      "content_html": "Version3.12.0 published on 2023-10-02. With change summary: ",
+      "summary": "3.12.0",
+      "date_published": "2025-02-16T21:25:19.175883-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.python.org/downloads/release/python-390/",
+      "title": "python39",
+      "content_html": "Version3.9.0 published on 2020-10-05. With change summary: ",
+      "summary": "3.9.0",
+      "date_published": "2025-02-16T21:25:19.175884-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.jetbrains.com/rider/download/",
+      "title": "rider",
+      "content_html": "Version2023.2 published on 2023-10. With change summary: ",
+      "summary": "2023.2",
+      "date_published": "2025-02-16T21:25:19.175885-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.screentogif.com/",
+      "title": "screentogif",
+      "content_html": "Version2.40 published on 2023-12-06. With change summary: ",
+      "summary": "2.40",
+      "date_published": "2025-02-16T21:25:19.175886-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/go-task/task/releases",
+      "title": "task",
+      "content_html": "Versionv3.41.0 published on 2025-01-18. With change summary: ",
+      "summary": "v3.41.0",
+      "date_published": "2025-02-16T21:25:19.175888-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/hashicorp/terraform/releases",
+      "title": "terraform",
+      "content_html": "Version1.10.5 published on 2025-01-22. With change summary: ",
+      "summary": "1.10.5",
+      "date_published": "2025-02-16T21:25:19.175889-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://code.visualstudio.com/updates",
+      "title": "vscode",
+      "content_html": "Version1.97.2 published on January 2025. With change summary: ",
+      "summary": "1.97.2",
+      "date_published": "2025-02-16T21:25:19.17589-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/microsoft/terminal/releases",
+      "title": "windows-terminal",
+      "content_html": "Version1.22.10352.0 published on 2023-02-06. With change summary: ",
+      "summary": "1.22.10352.0",
+      "date_published": "2025-02-16T21:25:19.175892-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/WinMerge/winmerge/releases",
+      "title": "winmerge",
+      "content_html": "Version2.16.46 published on 2025-01-27. With change summary: ",
+      "summary": "2.16.46",
+      "date_published": "2025-02-16T21:25:19.175893-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://www.wireshark.org/download.html",
+      "title": "wireshark",
+      "content_html": "Version4.4.3 published on unknown. With change summary: ",
+      "summary": "4.4.3",
+      "date_published": "2025-02-16T21:25:19.175894-05:00"
+    },
+    {
+      "id": "",
+      "url": "https://github.com/mikefarah/yq/releases",
+      "title": "yq",
+      "content_html": "Versionv4.45.1 published on 2025-01-12. With change summary: ",
+      "summary": "v4.45.1",
+      "date_published": "2025-02-16T21:25:19.175895-05:00"
     }
   ]
 }

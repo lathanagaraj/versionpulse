@@ -40,6 +40,7 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
                 feedItem.innerHTML = `
                     <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
                     <p>${item.summary}</p>
+                    <div>${item.content_html}</div>
                 `;
                 feedContainer.appendChild(feedItem);
             });
