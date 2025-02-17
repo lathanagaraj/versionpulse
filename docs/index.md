@@ -77,6 +77,14 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
         color: #555;
     }
 
+    .rss-item .published {
+        font-size: 0.9em;
+        color: #888;
+        margin-top: auto; /* Ensures it stays at the bottom */
+        padding-top: 10px;
+        border-top: 1px solid #eee;
+    }
+
     .rss-item a {
         text-decoration: none;
         font-weight: bold;
@@ -102,6 +110,7 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
                     <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
                     <p>${item.summary}</p>
                     <p class="content">${item.content_html}</p>
+                    <p class="published">Published on: ${item.date_published}</p>
                 `;
                 feedContainer.appendChild(feedItem);
             });
@@ -110,6 +119,7 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
             console.error('Error fetching RSS feed:', error);
         });
 </script>
+
 
 
 [JSON RSS Feed](https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json)
