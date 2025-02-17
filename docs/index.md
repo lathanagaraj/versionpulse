@@ -59,21 +59,22 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
     }
 
     .rss-item p {
-        flex-grow: 1;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 3; /* Limits summary to 3 lines */
         -webkit-box-orient: vertical;
+        margin-bottom: 10px;
     }
 
-    .rss-item div.content {
+    .rss-item .content {
         flex-grow: 1;
-        overflow-y: auto; /* Allows scrolling inside the content if needed */
-        max-height: 100px;
-        padding: 5px;
-        border-top: 1px solid #ddd;
-        margin-top: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Limits content to 3 lines */
+        -webkit-box-orient: vertical;
+        color: #555;
     }
 
     .rss-item a {
@@ -81,7 +82,6 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
         font-weight: bold;
         color: #3b007b;
     }
-
 </style>
 
 <div id="rss-feed"></div>
@@ -101,7 +101,7 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
                 feedItem.innerHTML = `
                     <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
                     <p>${item.summary}</p>
-                    <div class="content">${item.content_html}</div>
+                    <p class="content">${item.content_html}</p>
                 `;
                 feedContainer.appendChild(feedItem);
             });
