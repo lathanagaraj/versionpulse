@@ -130,6 +130,7 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
   /* Table Layout */
   #rss-table-container {
     width: 90%;
+    height: auto;
     margin: 0 auto;
     display: none; /* Initially hidden */
   }
