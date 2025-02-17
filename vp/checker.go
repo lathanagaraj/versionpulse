@@ -40,11 +40,11 @@ type promptData struct {
 	WebContent string
 }
 type ToolVersion struct {
-	Tool    string `json:"tool"`
-	Version string `json:"version"`
-	Date    string `json:"date"`
-	Link    string
-	Summary string
+	Tool        string `json:"tool"`
+	Version     string `json:"version"`
+	Date        string `json:"date"`
+	Link        string
+	Description string `json:"description"`
 }
 
 func NewChecker(toolName, content string) Checker {

@@ -24,7 +24,7 @@ func (f *ToolsFeed) ToRss() error {
 	// Create a new RSS feed
 	feed := &feeds.Feed{
 		Title:       "Latest Tool Versions",
-		Link:        &feeds.Link{Href: "https://example.com"},
+		Link:        &feeds.Link{Href: "https://lathanagaraj.github.io/versionpulse/"},
 		Description: "Latest Tool Versions RSS feed",
 		Created:     time.Now(),
 	}
@@ -37,7 +37,7 @@ func (f *ToolsFeed) ToRss() error {
 			Link:        &feeds.Link{Href: toolVersion.Link},
 			Description: toolVersion.Version,
 			Created:     time.Now(),
-			Content:     "Version" + toolVersion.Version + " published on " + toolVersion.Date + ". With change summary: " + toolVersion.Summary,
+			Content:     "Version" + toolVersion.Version + " published on " + toolVersion.Date + ". With change summary: " + toolVersion.Description,
 		}
 		feed.Items = append(feed.Items, rssItem)
 	}
