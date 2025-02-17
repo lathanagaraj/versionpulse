@@ -219,20 +219,20 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
   }
 
   // Toggle between Card and Table view
-  document.getElementById("toggle-view").addEventListener("click", function() {
-    const cardContainer = document.getElementById("rss-feed-container");
-    const tableContainer = document.getElementById("rss-table-container");
+//   document.getElementById("toggle-view").addEventListener("click", function() {
+//     const cardContainer = document.getElementById("rss-feed-container");
+//     const tableContainer = document.getElementById("rss-table-container");
 
-    if (cardContainer.style.display === "none") {
-      cardContainer.style.display = "block";
-      tableContainer.style.display = "none";
-      this.textContent = "Switch to Table View";
-    } else {
-      cardContainer.style.display = "none";
-      tableContainer.style.display = "block";
-      this.textContent = "Switch to Card View";
-    }
-  });
+//     if (cardContainer.style.display === "none") {
+//       cardContainer.style.display = "block";
+//       tableContainer.style.display = "none";
+//       this.textContent = "Switch to Table View";
+//     } else {
+//       cardContainer.style.display = "none";
+//       tableContainer.style.display = "block";
+//       this.textContent = "Switch to Card View";
+//     }
+//   });
 
   // Replace with your RSS feed URL
   const rssUrl = 'https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/feed.json';
