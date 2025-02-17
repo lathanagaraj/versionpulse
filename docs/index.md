@@ -31,12 +31,14 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
         background-color: #f5f6fa;
     }
 
+    /* Cards Layout */
     #rss-feed {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
-        align-items: stretch; /* Ensures all cards stretch to the tallest one */
+        align-items: stretch;
+        margin-bottom: 40px;
     }
 
     .rss-item {
@@ -51,7 +53,6 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
         background-color: white;
     }
 
-    /* Ensure all cards take the maximum height */
     .rss-item-container {
         display: flex;
         flex-direction: column;
@@ -89,39 +90,97 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
         font-weight: bold;
         color: #3b007b;
     }
+
+    /* Table Layout */
+    #rss-table-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #3b007b;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .table-title {
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #3b007b;
+    }
 </style>
 
+<!-- Cards Section -->
+<h2 style="text-align: center; color: #3b007b;">Feed in Card Format</h2>
 <div id="rss-feed"></div>
+
+<!-- Table Section -->
+<h2 style="text-align: center; color: #3b007b;">Feed in Table Format</h2>
+<div id="rss-table-container">
+    <table id="rss-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Summary</th>
+                <th>Content</th>
+                <th>Published Date</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
 
 <script>
     // Function to format the published date into a readable format
     function formatDate(isoString) {
         const date = new Date(isoString);
         return date.toLocaleString('en-US', {
-            weekday: 'long', // e.g., Monday
-            year: 'numeric', // e.g., 2025
-            month: 'long', // e.g., February
-            day: 'numeric', // e.g., 17
-            hour: 'numeric', // e.g., 5
-            minute: '2-digit', // e.g., 22
-            hour12: true // AM/PM format
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: '2-digit',
+            hour12: true
         });
     }
 
     // Replace with your RSS feed URL
-    const rssUrl = 'https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/feed.json';
+    const rssUrl = 'https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json';
 
     // Fetch RSS feed data and display it
     fetch(rssUrl)
         .then(response => response.json())
         .then(data => {
             const feedContainer = document.getElementById('rss-feed');
+            const tableBody = document.querySelector("#rss-table tbody");
+
             let maxHeight = 0; // Track max height
 
             data.items.forEach(item => {
+                // Create card layout
                 const feedItem = document.createElement('div');
                 feedItem.classList.add('rss-item');
-                
+
                 feedItem.innerHTML = `
                     <div class="rss-item-container">
                         <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
@@ -130,13 +189,22 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
                         <p class="published">Published on: ${formatDate(item.date_published)}</p>
                     </div>
                 `;
-
                 feedContainer.appendChild(feedItem);
 
                 // Update maxHeight based on the tallest card
                 if (feedItem.clientHeight > maxHeight) {
                     maxHeight = feedItem.clientHeight;
                 }
+
+                // Create table row
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td><a href="${item.url}" target="_blank">${item.title}</a></td>
+                    <td>${item.summary}</td>
+                    <td>${item.content_html}</td>
+                    <td>${formatDate(item.date_published)}</td>
+                `;
+                tableBody.appendChild(row);
             });
 
             // Apply maxHeight to all cards
