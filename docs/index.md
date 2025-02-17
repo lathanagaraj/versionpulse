@@ -237,6 +237,5 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
         });
 </script>
 
-[JSON RSS Feed](https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/feed.json)
 
 

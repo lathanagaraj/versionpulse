@@ -24,10 +24,12 @@ body {
 
 /* Intro text stays fixed below banner */
 .intro {
+  color: #000;
   padding: 10px 20px;
   position: sticky;
   top: 80px; /* Adjust based on banner height */
   z-index: 999;
+  background-color: transparent;
 }
 
 /* Scrollable section */
