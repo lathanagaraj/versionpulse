@@ -2,13 +2,17 @@ package main
 
 import (
 	"log"
+	"time"
 	"versionpulse/vp"
 )
 
 const WebContentLenght int = 25000
 
 func main() {
+	start := time.Now()
 	checkToolVersions()
+	elapsed := time.Since(start)
+	log.Printf("Time taken: %s\n", elapsed)
 }
 
 func checkToolVersions() {

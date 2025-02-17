@@ -24,33 +24,33 @@ tools:
   - name: drawio
     url: https://github.com/jgraph/drawio-desktop/releases
   - name: etlp2pcapng
-    url: https://github.com/etlp/etlp2pcapng/releases
+    url: https://github.com/microsoft/etl2pcapng/tags
   - name: ffmpeg
     url: https://ffmpeg.org/download.html
   - name: gateway
     url: https://github.com/kris-nova/kubicorn/releases
   - name: git-win
-    url: https://gitforwindows.org/
+    https://github.com/git-for-windows/git/releases
   - name: gitlab-cli
     url: https://github.com/profclems/glab/releases
   - name: gitlab-releaser-cli
-    url: https://github.com/gitlab-org/cli/releases
+    url: https://gitlab.com/gitlab-org/release-cli/-/releases
   - name: gitlab-runner-agent
-    url: https://docs.gitlab.com/runner/releases/
+    url: https://gitlab.com/gitlab-org/gitlab-runner/-/releases
   - name: golang
     url: https://golang.org/dl/
   - name: golang1.22
-    url: https://golang.org/dl/
+    url: https://go.dev/doc/devel/release#go1.22.minor
   - name: golang1.23
-    url: https://golang.org/dl/
+    url: https://go.dev/doc/devel/release#go1.23.minor
   - name: helm
     url: https://github.com/helm/helm/releases
   - name: inkscape
     url: https://inkscape.org/release/
   - name: intellij-idea-ultimate
-    url: https://www.jetbrains.com/idea/download/
+    url: https://blog.jetbrains.com/idea/category/releases/
   - name: jmeter
-    url: https://jmeter.apache.org/download_jmeter.cgi
+    url: https://github.com/apache/jmeter/tags
   - name: jq
     url: https://github.com/stedolan/jq/releases
   - name: kubectl
@@ -61,6 +61,8 @@ tools:
     url: https://maven.apache.org/download.cgi
   - name: miniconda
     url: https://docs.anaconda.com/miniconda/release-notes/
+  - name: node
+    url: https://nodejs.org/en/download/releases/
   - name: node16
     url: https://nodejs.org/en/download/releases/
   - name: node18
@@ -74,13 +76,13 @@ tools:
   - name: openshift
     url: https://github.com/openshift/okd/releases
   - name: oraclejdk11
-    url: https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
+    url: https://www.oracle.com/java/technologies/javase/11all-relnotes.html
   - name: oraclejdk17
-    url: https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+    url: https://www.oracle.com/java/technologies/javase/17all-relnotes.html
   - name: oraclejdk21
-    url: https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html
+    url: https://www.oracle.com/java/technologies/javase/21all-relnotes.html
   - name: oraclejdk8
-    url: https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
+    url: https://www.oracle.com/java/technologies/javase/8u-relnotes.html
   - name: powershell
     url: https://github.com/PowerShell/PowerShell/releases
   - name: putty
