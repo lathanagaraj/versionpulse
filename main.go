@@ -5,6 +5,8 @@ import (
 	"versionpulse/vp"
 )
 
+const WebContentLenght int = 25000
+
 func main() {
 	checkToolVersions()
 }
@@ -20,7 +22,7 @@ func checkToolVersions() {
 
 	for _, tool := range tools.Tools {
 
-		siteContent, err := vp.NewScrapper(tool.URL).Scrape()
+		siteContent, err := vp.NewScrapper(tool.URL, WebContentLenght).Scrape()
 		if err != nil {
 			log.Printf("Error fetching %s: %v", tool.URL, err)
 			continue

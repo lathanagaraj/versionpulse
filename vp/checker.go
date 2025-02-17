@@ -44,6 +44,7 @@ type ToolVersion struct {
 	Version string `json:"version"`
 	Date    string `json:"date"`
 	Link    string
+	Summary string
 }
 
 func NewChecker(toolName, content string) Checker {
@@ -65,7 +66,6 @@ func (c Checker) CheckVersion() (*ToolVersion, error) {
 		return nil, err
 	}
 	return toolVersion, nil
-
 }
 
 func createAzureClient() *openai.ClientConfig {
@@ -124,6 +124,7 @@ func queryLLM(toolName, extractedText string) (string, error) {
 
 	// Combine extracted text with user query
 	userprompt, err := createPrompt(toolName, extractedText)
+	log.Printf("prompt size %d", len(userprompt))
 	if err != nil {
 		return "", err
 	}
@@ -151,7 +152,7 @@ func queryLLM(toolName, extractedText string) (string, error) {
 			ResponseFormat: &openai.ChatCompletionResponseFormat{
 				Type: openai.ChatCompletionResponseFormatTypeJSONObject,
 			},
-			MaxTokens:   50,
+			MaxTokens:   100,
 			N:           1,
 			Temperature: 0,
 		},
@@ -191,12 +192,12 @@ func createPrompt(toolName, extractedText string) (string, error) {
 }
 
 func extractJSONObject(text string) (*ToolVersion, error) {
+	log.Printf(text)
 	// Find the JSON object in the text
 	startIndex := strings.Index(text, "{")
 	if startIndex == -1 {
 		return nil, fmt.Errorf("no JSON object found in text")
 	}
-
 	endIndex := strings.Index(text, "}")
 	if endIndex == -1 {
 		return nil, fmt.Errorf("no closing bracket found in JSON object")

@@ -1,8 +1,13 @@
-Provide the latest stable version for the tool in **strict JSON format** without any additional text from Webpage Content provided.
+Provide the latest stable version for the tool from Webpage Content provided. 
+Json structure is provided below and description of the attributes attributes are:
+- versions is the latest stable version only
+- date is the release date of the version
+- description is a short description of the changes in the latest release not exceeding three sentences
 {
     "tool": "{{.Tool}}",
     "version": "version",
-    "date": "date"
+    "date": "date",
+    "description": "description"
 }
 Webpage Content:
 {{ .WebContent }}

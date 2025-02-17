@@ -35,8 +35,9 @@ func (f *ToolsFeed) ToRss() error {
 		rssItem := &feeds.Item{
 			Title:       toolVersion.Tool,
 			Link:        &feeds.Link{Href: toolVersion.Link},
-			Description: toolVersion.Tool + " " + toolVersion.Version + " " + toolVersion.Date,
+			Description: toolVersion.Version,
 			Created:     time.Now(),
+			Content:     "Version" + toolVersion.Version + " published on " + toolVersion.Date + ". With change summary: " + toolVersion.Summary,
 		}
 		feed.Items = append(feed.Items, rssItem)
 	}

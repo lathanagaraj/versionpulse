@@ -9,11 +9,12 @@ import (
 )
 
 type Scrapper struct {
-	Url string
+	Url   string
+	Limit int
 }
 
-func NewScrapper(url string) *Scrapper {
-	return &Scrapper{Url: url}
+func NewScrapper(url string, limit int) *Scrapper {
+	return &Scrapper{Url: url, Limit: limit}
 }
 
 // Extracts text from the url passed.
@@ -37,5 +38,12 @@ func (s *Scrapper) Scrape() (string, error) {
 	text = strings.ReplaceAll(text, "\t", " ")
 	text = strings.TrimSpace(text)
 
-	return text, nil
+	return truncate(text, s.Limit), nil
+}
+
+func truncate(text string, limit int) string {
+	if len(text) > limit {
+		return text[:limit]
+	}
+	return text
 }
