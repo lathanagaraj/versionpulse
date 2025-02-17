@@ -120,45 +120,6 @@ h1 {
 
   
 
-  .rss-item {
-      width: 300px; /* Set a fixed width */
-      height: 400px; /* Set a fixed height */
-      overflow: hidden; /* Hide overflowing content */
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      border: 1px solid #ddd;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-      margin: 10px;
-  }
-
-  .rss-item h3 {
-      font-size: 1.2em;
-      margin-bottom: 10px;
-  }
-
-  .rss-item p {
-      flex-grow: 1; /* Allows summary to take available space */
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-  }
-
-  .rss-item div {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-  }
-
-  #rss-feed {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-  }
-
 @media (max-width: 768px) {
   .rss-grid {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
