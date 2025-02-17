@@ -81,13 +81,6 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
   }
 
 
-
-.rss-item {
-    flex: 1 1 20%; /* This means each item will take up 20% of the available width */
-    max-width: 20%; /* Optional, ensures each item doesn't exceed 20% */
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
   #rss-feed {
     display: flex;
     flex-wrap: wrap;

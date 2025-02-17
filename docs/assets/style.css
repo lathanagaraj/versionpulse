@@ -24,7 +24,7 @@ body {
 
 /* Intro text stays fixed below banner */
 .intro {
-  color: #ffffff;
+  color: #f0e8e8;
   padding: 10px 20px;
   position: sticky;
   top: 80px; /* Adjust based on banner height */
