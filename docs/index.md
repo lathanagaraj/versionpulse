@@ -43,6 +43,7 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
     padding: 20px;
     text-align: center;
     z-index: 10;
+    height: auto;
   }
 
   .banner h1 {
