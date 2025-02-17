@@ -14,14 +14,12 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
 
 <header class="banner">
   <h1>VersionPulse</h1>
-</header>
-
-<div class="intro">
+  <div class="intro">
   <p>VersionPulse is your go-to solution for tracking developer tool releases from <strong>GitHub</strong> and <strong>Vendor Websites</strong>. Stay informed with <strong>automated RSS feeds</strong> and never miss an update.</p>
 </div>
+</header>
 
 <section class="scrollable-section">
-  <h2>Latest Releases</h2>
   <div id="rss-feed" class="rss-grid"></div>
 </section>
 
