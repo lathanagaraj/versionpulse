@@ -29,6 +29,19 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
     body {
         font-family: Arial, sans-serif;
         background-color: #f5f6fa;
+        text-align: center;
+    }
+
+    /* Toggle Button */
+    #toggle-view {
+        background-color: #3b007b;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        margin-bottom: 20px;
     }
 
     /* Cards Layout */
@@ -51,12 +64,6 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
         border-radius: 10px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         background-color: white;
-    }
-
-    .rss-item-container {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
     }
 
     .rss-item h3 {
@@ -95,6 +102,7 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
     #rss-table-container {
         width: 90%;
         margin: 0 auto;
+        display: none; /* Initially hidden */
     }
 
     table {
@@ -121,20 +129,15 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
         background-color: #f2f2f2;
     }
 
-    .table-title {
-        text-align: center;
-        font-size: 1.5em;
-        margin-bottom: 10px;
-        color: #3b007b;
-    }
 </style>
 
+<!-- Toggle Button -->
+<button id="toggle-view">Switch to Table View</button>
+
 <!-- Cards Section -->
-<h2 style="text-align: center; color: #3b007b;">Feed in Card Format</h2>
 <div id="rss-feed"></div>
 
 <!-- Table Section -->
-<h2 style="text-align: center; color: #3b007b;">Feed in Table Format</h2>
 <div id="rss-table-container">
     <table id="rss-table">
         <thead>
@@ -164,8 +167,24 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
         });
     }
 
+    // Toggle between Card and Table view
+    document.getElementById("toggle-view").addEventListener("click", function() {
+        const cardView = document.getElementById("rss-feed");
+        const tableView = document.getElementById("rss-table-container");
+
+        if (cardView.style.display === "none") {
+            cardView.style.display = "flex";
+            tableView.style.display = "none";
+            this.textContent = "Switch to Table View";
+        } else {
+            cardView.style.display = "none";
+            tableView.style.display = "block";
+            this.textContent = "Switch to Card View";
+        }
+    });
+
     // Replace with your RSS feed URL
-    const rssUrl = 'https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/feed.json';
+    const rssUrl = 'https://raw.githubusercontent.com/lathanagaraj/versionpulse/refs/heads/main/docs/feed.json';
 
     // Fetch RSS feed data and display it
     fetch(rssUrl)
@@ -182,12 +201,10 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
                 feedItem.classList.add('rss-item');
 
                 feedItem.innerHTML = `
-                    <div class="rss-item-container">
-                        <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
-                        <p>${item.summary}</p>
-                        <p class="content">${item.content_html}</p>
-                        <p class="published">Published on: ${formatDate(item.date_published)}</p>
-                    </div>
+                    <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
+                    <p>${item.summary}</p>
+                    <p class="content">${item.content_html}</p>
+                    <p class="published">Published on: ${formatDate(item.date_published)}</p>
                 `;
                 feedContainer.appendChild(feedItem);
 
