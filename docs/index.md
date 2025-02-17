@@ -36,44 +36,43 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
+        align-items: stretch; /* Ensures all cards stretch to the tallest one */
     }
 
     .rss-item {
         width: 320px;
-        height: 420px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         border: 1px solid #ddd;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         background-color: white;
-        overflow: hidden;
+    }
+
+    /* Ensure all cards take the maximum height */
+    .rss-item-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
     }
 
     .rss-item h3 {
         font-size: 1.2em;
         margin-bottom: 10px;
         color: #3b007b;
+        text-align: left;
     }
 
     .rss-item p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3; /* Limits summary to 3 lines */
-        -webkit-box-orient: vertical;
+        text-align: left;
         margin-bottom: 10px;
     }
 
     .rss-item .content {
         flex-grow: 1;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3; /* Limits content to 3 lines */
-        -webkit-box-orient: vertical;
+        text-align: left;
         color: #555;
     }
 
@@ -117,16 +116,32 @@ excerpt: "VersionPulse aggregates GitHub and vendor releases into a single RSS f
         .then(response => response.json())
         .then(data => {
             const feedContainer = document.getElementById('rss-feed');
+            let maxHeight = 0; // Track max height
+
             data.items.forEach(item => {
                 const feedItem = document.createElement('div');
                 feedItem.classList.add('rss-item');
+                
                 feedItem.innerHTML = `
-                    <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
-                    <p>${item.summary}</p>
-                    <p class="content">${item.content_html}</p>
-                    <p class="published">Published on: ${formatDate(item.date_published)}</p>
+                    <div class="rss-item-container">
+                        <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
+                        <p>${item.summary}</p>
+                        <p class="content">${item.content_html}</p>
+                        <p class="published">Published on: ${formatDate(item.date_published)}</p>
+                    </div>
                 `;
+
                 feedContainer.appendChild(feedItem);
+
+                // Update maxHeight based on the tallest card
+                if (feedItem.clientHeight > maxHeight) {
+                    maxHeight = feedItem.clientHeight;
+                }
+            });
+
+            // Apply maxHeight to all cards
+            document.querySelectorAll('.rss-item').forEach(item => {
+                item.style.height = maxHeight + 'px';
             });
         })
         .catch(error => {
