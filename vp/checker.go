@@ -32,6 +32,7 @@ const modelName = "gpt-4o"
 
 type Checker struct {
 	ToolName string
+	ToolId   string
 	Content  string
 }
 
@@ -40,6 +41,7 @@ type promptData struct {
 	WebContent string
 }
 type ToolVersion struct {
+	ID          string
 	Tool        string `json:"tool"`
 	Version     string `json:"version"`
 	Date        string `json:"date"`
@@ -47,8 +49,9 @@ type ToolVersion struct {
 	Description string `json:"description"`
 }
 
-func NewChecker(toolName, content string) Checker {
+func NewChecker(toolId, toolName, content string) Checker {
 	return Checker{
+		ToolId:   toolId,
 		ToolName: toolName,
 		Content:  content,
 	}
@@ -65,6 +68,7 @@ func (c Checker) CheckVersion() (*ToolVersion, error) {
 		log.Printf("Error extracting JSON object: %v", err)
 		return nil, err
 	}
+	toolVersion.ID = c.ToolId
 	return toolVersion, nil
 }
 

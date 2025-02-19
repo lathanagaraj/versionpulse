@@ -32,7 +32,7 @@ func checkToolVersions() {
 			continue
 		}
 
-		toolVersion, err := vp.NewChecker(tool.Name, siteContent).CheckVersion()
+		toolVersion, err := vp.NewChecker(tool.ID, tool.Name, siteContent).CheckVersion()
 		if err != nil {
 			log.Printf("Error extracting JSON object: %v", err)
 			continue

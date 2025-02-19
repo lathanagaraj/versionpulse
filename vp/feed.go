@@ -33,6 +33,7 @@ func (f *ToolsFeed) ToRss() error {
 	for _, toolVersion := range f.ToolVersions {
 
 		rssItem := &feeds.Item{
+			Id:          toolVersion.ID,
 			Title:       toolVersion.Tool,
 			Link:        &feeds.Link{Href: toolVersion.Link},
 			Description: toolVersion.Version,
