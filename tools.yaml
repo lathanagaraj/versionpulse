@@ -110,7 +110,7 @@ tools:
   - ID: node22
     name: node22
     url: https://nodejs.org/en/download/releases/
-  - ID: notepad-plus-plus
+  - ID: notepadplusplus
     name: notepad-plus-plus
     url: https://notepad-plus-plus.org/index.xml
   - ID: openshift
@@ -137,16 +137,16 @@ tools:
   - ID: python
     name: python
     url: https://www.python.org/downloads/
-  - ID: python3.10
+  - ID: python310
     name: python3.10
     url: https://www.python.org/downloads/
-  - ID: python3.11
+  - ID: python311
     name: python3.11
     url: https://www.python.org/downloads/
-  - ID: python3.12
+  - ID: python312
     name: python3.12
     url: https://www.python.org/downloads/
-  - ID: python3.9
+  - ID: python39
     name: python3.9
     url: https://www.python.org/downloads/
   - ID: rider
