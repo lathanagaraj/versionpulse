@@ -156,7 +156,7 @@ func queryLLM(toolName, extractedText string) (string, error) {
 			ResponseFormat: &openai.ChatCompletionResponseFormat{
 				Type: openai.ChatCompletionResponseFormatTypeJSONObject,
 			},
-			MaxTokens:   100,
+			MaxTokens:   200,
 			N:           1,
 			Temperature: 0,
 		},

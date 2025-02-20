@@ -1,4 +1,4 @@
-Provide most latest stable version for the tool from Webpage Content provided. Do not include any EAP versions.
+Provide most latest stable version for the tool from Webpage Content provided. 
 Json structure is provided below and description of the attributes attributes are:
 - versions is the latest stable version only
 - date is the release date of the version

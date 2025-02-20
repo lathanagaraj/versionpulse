@@ -1,6 +1,6 @@
 tools:
   - ID: 7zip
-    name: 7zip
+    name: 7-Zip
     url: https://www.7-zip.org/download.html
   - ID: awscli2
     name: awscli2
@@ -27,10 +27,10 @@ tools:
     name: docker-desktop
     url: https://docs.docker.com/desktop/release-notes/
   - ID: dotnet6
-    name:  SDK
+    name:  Buiild Apps SDK
     url: https://dotnet.microsoft.com/download/dotnet/6.0
   - ID: dotnet8
-    name:  SDK
+    name:  Build Apps SDK
     url: https://dotnet.microsoft.com/download/dotnet/8.0
   - ID: drawio
     name: drawio
@@ -43,26 +43,29 @@ tools:
     url: https://ffmpeg.org/download.html
   - ID: gateway
     name: gateway
-    url: https://github.com/kris-nova/kubicorn/releases
+    url: https://data.services.jetbrains.com/products/releases?code=GW&type=release&latest=true
   - ID: git-win
     name: git-win
     url: https://github.com/git-for-windows/git/releases
   - ID: gitlab-cli
-    name: gitlab-cli
-    url: https://github.com/profclems/glab/releases
-  - ID: gitlab-releaser-cli
-    name: gitlab-releaser-cli
-    url: https://gitlab.com/gitlab-org/release-cli/-/releases
+    name: cli
+    url: https://gitlab.com/gitlab-org/cli/-/releases.atom
+  - ID: gitlab-release-cli
+    name: gitlab release cli
+    url: https://gitlab.com/gitlab-org/release-cli/-/releases.atom
   - ID: gitlab-runner-agent
     name: gitlab-runner-agent
-    url: https://gitlab.com/gitlab-org/gitlab-runner/-/releases
+    url: https://gitlab.com/gitlab-org/gitlab-runner/-/releases.atom
   - ID: golang
     name: golang
     url: https://golang.org/dl/
-  - ID: golang1.22
+  - ID: go121
+    name: golang1.21
+    url: https://go.dev/doc/devel/release#go1.21.minor
+  - ID: go122
     name: golang1.22
     url: https://go.dev/doc/devel/release#go1.22.minor
-  - ID: golang1.23
+  - ID: go123
     name: golang1.23
     url: https://go.dev/doc/devel/release#go1.23.minor
   - ID: helm
