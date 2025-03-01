@@ -8,113 +8,113 @@
       "id": "7zip",
       "url": "https://www.7-zip.org/download.html",
       "title": "7-Zip",
-      "content_html": "Version 24.09 published on 2024-11-29. The summary of changes are: The latest release includes updates for improved performance and compatibility across multiple platforms, including Windows, Linux, and macOS. Additional installer options are provided for various system architectures. This release also features bug fixes and optimizations for the 7z format handling.",
+      "content_html": "Version 24.09 published on 2024-11-29. The summary of changes are: Latest release with enhanced performance and stability fixes, including updates for better cross-platform functionality.",
       "summary": "24.09",
-      "date_published": "2025-02-27T00:49:21.207342944Z"
+      "date_published": "2025-03-01T00:52:51.59909128Z"
     },
     {
       "id": "awscli2",
       "url": "https://raw.githubusercontent.com/aws/aws-cli/refs/heads/v2/CHANGELOG.rst",
       "title": "awscli2",
-      "content_html": "Version 2.24.13 published on 2023-10-27. The summary of changes are: Latest update includes documentation changes, API support for Application Signals, enhancements to AWS Batch and CloudFront VPC origin config, and rolling updates for SageMaker InferenceComponents.",
-      "summary": "2.24.13",
-      "date_published": "2025-02-27T00:49:21.207344066Z"
+      "content_html": "Version 2.24.15 published on 2025-02-XX. The summary of changes are: Multiple API changes including Price, EKS, and Bedrock updates. Dependency rollback for PyInstaller. Bugfixes and new features.",
+      "summary": "2.24.15",
+      "date_published": "2025-03-01T00:52:51.599094456Z"
     },
     {
       "id": "azurecli",
       "url": "https://github.com/azure/azure-cli/releases",
       "title": "azurecli",
-      "content_html": "Version 2.69.0 published on 2023-02-11. The summary of changes are: Azure CLI 2.69.0 includes updates and bug fixes to enhance stability and usability. For detailed release notes, refer to the Azure CLI documentation.",
+      "content_html": "Version 2.69.0 published on 2023-02-11. The summary of changes are: The latest release includes performance improvements and bug fixes. Users are encouraged to upgrade for enhanced functionality and reliability. Refer to the release notes for detailed updates.",
       "summary": "2.69.0",
-      "date_published": "2025-02-27T00:49:21.207344938Z"
+      "date_published": "2025-03-01T00:52:51.599096119Z"
     },
     {
       "id": "bicepcli",
       "url": "https://github.com/Azure/bicep/releases",
       "title": "bicepcli",
-      "content_html": "Version v0.33.93 published on 2025-01-29. The summary of changes are: This release addresses language server crashes, deployment failures with looped resources, and promotes the Deployment Pane as a stable feature.",
+      "content_html": "Version v0.33.93 published on 2025-01-29. The summary of changes are: Addresses a language server crash, deployment failures with looped resources, and releases the Deployment Pane as a stable feature.",
       "summary": "v0.33.93",
-      "date_published": "2025-02-27T00:49:21.20734571Z"
+      "date_published": "2025-03-01T00:52:51.599098193Z"
     },
     {
       "id": "bruno",
       "url": "https://github.com/usebruno/bruno/releases",
       "title": "bruno",
-      "content_html": "Version v1.39.1 published on 2025-02-20. The summary of changes are: This release includes improved worker threads for file parsing, updated templates for bug reporting and feature requests, and various minor fixes to enhance the overall user experience.",
+      "content_html": "Version v1.39.1 published on 2025-02-20. The summary of changes are: This release improves worker thread efficiency for .bru file parsing, updates templates for feature requests and bug reports, and includes minor fixes and enhancements for a smoother user experience.",
       "summary": "v1.39.1",
-      "date_published": "2025-02-27T00:49:21.20734624Z"
+      "date_published": "2025-03-01T00:52:51.599099055Z"
     },
     {
       "id": "clink",
       "url": "https://github.com/chrisant996/clink/releases",
       "title": "clink",
-      "content_html": "Version 1.7.10 published on 2023-02-07. The summary of changes are: Introduced new Lua API for Unicode handling and a diagnostic command for troubleshooting improvements. Resolved potential crash issues with console width and enhanced internal diagnostic clarity.",
-      "summary": "1.7.10",
-      "date_published": "2025-02-27T00:49:21.207346992Z"
+      "content_html": "Version v1.7.11 published on 2023-02-28. The summary of changes are: Updated clink-diagnostics-output command to include current settings, added error message text for codes, and fixed input hint and scrollbar height issues.",
+      "summary": "v1.7.11",
+      "date_published": "2025-03-01T00:52:51.599099746Z"
     },
     {
       "id": "dbeaver",
       "url": "https://dbeaver.io/download/",
       "title": "dbeaver",
-      "content_html": "Version 24.3.5 published on 2025-02-16. The summary of changes are: The latest release includes various bug fixes and enhancements to improve stability and performance. It is free, open-source, and now available for download. This ensures seamless database management across multiple platforms.",
+      "content_html": "Version 24.3.5 published on 2025-02-16. The summary of changes are: Latest minor release featuring bug fixes and performance improvements, ensuring stability and enhanced user experience.",
       "summary": "24.3.5",
-      "date_published": "2025-02-27T00:49:21.207347353Z"
+      "date_published": "2025-03-01T00:52:51.599101299Z"
     },
     {
       "id": "dive",
       "url": "https://github.com/wagoodman/dive/releases",
       "title": "dive",
-      "content_html": "Version v0.12.0 published on 2024-02-02. The summary of changes are: Includes features for Docker layer vulnerability scanning and GitLab CI secure usage, fixes compatibility with Docker 25+, and updates dependencies for improved security.",
+      "content_html": "Version v0.12.0 published on 2024-02-02. The summary of changes are: This release adds features for Docker layer-wise vulnerability detection and secure usage in GitLab CI, fixes compatibility issues with Docker 25+, and includes updates to the Go runtime and Snap installation instructions.",
       "summary": "v0.12.0",
-      "date_published": "2025-02-27T00:49:21.207348004Z"
+      "date_published": "2025-03-01T00:52:51.59910186Z"
     },
     {
       "id": "docker-desktop",
       "url": "https://docs.docker.com/desktop/release-notes/",
       "title": "docker-desktop",
-      "content_html": "Version 4.38.0 published on 2025-01-30. The summary of changes are: Introduced multi-node Kubernetes clusters and independent updates for key components without restarting Docker Desktop. Bake is now generally available with entitlements and composable attributes. Bug fixes addressed token refresh, container creation, and UI issues across platforms.",
+      "content_html": "Version 4.38.0 published on 2025-01-30. The summary of changes are: The latest release includes new features like Bake and multi-node Kubernetes clusters. It also introduces upgrades to tools like containerd and Docker Engine, along with various bug fixes and enhancements.",
       "summary": "4.38.0",
-      "date_published": "2025-02-27T00:49:21.207348404Z"
+      "date_published": "2025-03-01T00:52:51.599104004Z"
     },
     {
       "id": "dotnet6",
       "url": "https://dotnet.microsoft.com/download/dotnet/6.0",
       "title": "Buiild Apps SDK",
-      "content_html": "Version 6.0.428 published on November 12, 2024. The summary of changes are: The latest stable release of Build Apps SDK for .NET 6.0 includes updated language support and enhanced runtime capabilities.",
+      "content_html": "Version 6.0.428 published on 2024-11-12. The summary of changes are: This is the latest stable release of the .NET 6.0 SDK, enhancing performance and including updated runtimes for building .NET applications.",
       "summary": "6.0.428",
-      "date_published": "2025-02-27T00:49:21.207349216Z"
+      "date_published": "2025-03-01T00:52:51.599105898Z"
     },
     {
       "id": "dotnet8",
       "url": "https://dotnet.microsoft.com/download/dotnet/8.0",
       "title": "Build Apps SDK",
-      "content_html": "Version 8.0.406 published on February 11, 2025. The summary of changes are: This release updates the .NET 8 SDK to version 8.0.406, including support for C# 12.0, F# 8.0, and Visual Basic 16.9. It also includes the latest runtime improvements for building and running .NET applications.",
+      "content_html": "Version 8.0.406 published on February 11, 2025. The summary of changes are: The latest stable release of .NET 8.0 SDK includes updates for improved stability and compatibility. This version supports the newest runtimes and languages like C# 12.0, along with various bug fixes.",
       "summary": "8.0.406",
-      "date_published": "2025-02-27T00:49:21.207350498Z"
+      "date_published": "2025-03-01T00:52:51.599106649Z"
     },
     {
       "id": "drawio",
       "url": "https://github.com/jgraph/drawio-desktop/releases",
       "title": "drawio",
-      "content_html": "Version 26.0.16 published on 2025-02-24. The summary of changes are: Updates to draw.io core v26.0.16 with integration of electron 34.2.0, incorporating all changes from the previous build.",
+      "content_html": "Version 26.0.16 published on 2025-02-24. The summary of changes are: Latest update to the draw.io core. Uses Electron 34.2.0 and includes all changes from previous 26.0.16 builds.",
       "summary": "26.0.16",
-      "date_published": "2025-02-27T00:49:21.207350929Z"
+      "date_published": "2025-03-01T00:52:51.59910714Z"
     },
     {
       "id": "etlp2pcapng",
       "url": "https://github.com/microsoft/etl2pcapng/tags",
       "title": "etlp2pcapng",
-      "content_html": "Version v1.11.0 published on 2023-06-08. The summary of changes are: Improved handling of pktmon captures for enhanced performance and stability.",
+      "content_html": "Version v1.11.0 published on 2023-06-08. The summary of changes are: Handles pktmon captures more gracefully, improving the tool's robustness and handling capability.",
       "summary": "v1.11.0",
-      "date_published": "2025-02-27T00:49:21.2073514Z"
+      "date_published": "2025-03-01T00:52:51.599107601Z"
     },
     {
       "id": "ffmpeg",
       "url": "https://ffmpeg.org/download.html",
       "title": "ffmpeg",
-      "content_html": "Version 7.1 published on 2024-09-30. The summary of changes are: FFmpeg 7.1 'Péter' introduces updates from the 7.1 branch with improved library versions and latest enhancements for multimedia processing.",
+      "content_html": "Version 7.1 published on 2024-09-30. The summary of changes are: The latest stable release from the 7.1 branch, offering updates to libraries and bug fixes for enhanced stability and performance.",
       "summary": "7.1",
-      "date_published": "2025-02-27T00:49:21.207352502Z"
+      "date_published": "2025-03-01T00:52:51.599108973Z"
     },
     {
       "id": "gateway",
@@ -122,359 +122,359 @@
       "title": "gateway",
       "content_html": "Version 2024.3.3 published on 2025-02-13. The summary of changes are: The Gateway 2024.3.3 is out with minor updates.",
       "summary": "2024.3.3",
-      "date_published": "2025-02-27T00:49:21.207352953Z"
+      "date_published": "2025-03-01T00:52:51.599109484Z"
     },
     {
       "id": "git-win",
       "url": "https://github.com/git-for-windows/git/releases",
       "title": "git-win",
-      "content_html": "Version 2.48.1 published on 2025-02-13. The summary of changes are: This release introduces Git v2.48.1, includes updates to MinTTY and the MSYS2 runtime, and defaults to the Windows-native HTTPS transport backend for new installations.",
+      "content_html": "Version 2.48.1 published on 2025-02-13. The summary of changes are: This is the last version to support the i686 ('32-bit') installer, phase out git svn, and includes updates like Tig v2.5.12, cURL v8.12.1, and OpenSSL v3.2.4.",
       "summary": "2.48.1",
-      "date_published": "2025-02-27T00:49:21.207353584Z"
+      "date_published": "2025-03-01T00:52:51.599110696Z"
     },
     {
       "id": "gitlab-cli",
       "url": "https://gitlab.com/gitlab-org/cli/-/releases.atom",
       "title": "cli",
-      "content_html": "Version v1.53.0 published on 2025-02-14T15:20:04Z. The summary of changes are: Documented the GLAB_CHECK_UPDATE environment variable and implemented several features including the 'glab ci cancel' command and the '--raw' option for 'mr diffs'.",
+      "content_html": "Version v1.53.0 published on 2025-02-14T15:20:04Z. The summary of changes are: This release adds new commands and features, such as the ability to cancel CI jobs, manage labels, and enhance MR diff options, alongside various documentation fixes.",
       "summary": "v1.53.0",
-      "date_published": "2025-02-27T00:49:21.207353885Z"
+      "date_published": "2025-03-01T00:52:51.599111278Z"
     },
     {
       "id": "gitlab-release-cli",
       "url": "https://gitlab.com/gitlab-org/release-cli/-/releases.atom",
       "title": "gitlab release cli",
-      "content_html": "Version v0.22.0 published on 2025-02-17. The summary of changes are: Merged 'release-0-22-0' branch into 'master' with various enhancements.",
+      "content_html": "Version v0.22.0 published on 2025-02-17. The summary of changes are: Release v0.22.0 includes merging branch 'release-0-22-0' into 'master' and various updates contributed by Furkan Ayhan and Timo Furrer.",
       "summary": "v0.22.0",
-      "date_published": "2025-02-27T00:49:21.207355458Z"
+      "date_published": "2025-03-01T00:52:51.599112951Z"
     },
     {
       "id": "gitlab-runner-agent",
       "url": "https://gitlab.com/gitlab-org/gitlab-runner/-/releases.atom",
       "title": "gitlab-runner-agent",
-      "content_html": "Version v17.9.0 published on 2025-02-20. The summary of changes are: Updated CHANGELOG for v17.9.0 release.",
+      "content_html": "Version v17.9.0 published on 2025-02-20T03:15:49Z. The summary of changes are: Update CHANGELOG for v17.9.0. See the changelog for detailed changes.",
       "summary": "v17.9.0",
-      "date_published": "2025-02-27T00:49:21.207355858Z"
+      "date_published": "2025-03-01T00:52:51.599113933Z"
     },
     {
       "id": "golang",
       "url": "https://golang.org/dl/",
       "title": "golang",
-      "content_html": "Version 1.24.0 published on unknown. The summary of changes are: The latest release, version 1.24.0, introduces general improvements and bug fixes. Additional features further optimize performance and streamline the developer experience.",
+      "content_html": "Version 1.24.0 published on . The summary of changes are: The latest stable Go release includes performance improvements and updates to enhance developer experience. It provides numerous fixes and refinements for compatibility across platforms. See the official release notes for more details.",
       "summary": "1.24.0",
-      "date_published": "2025-02-27T00:49:21.207356249Z"
+      "date_published": "2025-03-01T00:52:51.599115175Z"
     },
     {
       "id": "go121",
       "url": "https://go.dev/doc/devel/release#go1.21.minor",
       "title": "golang1.21",
-      "content_html": "Version 1.21.13 published on 2024-08-06. The summary of changes are: This release includes fixes to the go command, the covdata command, and the bytes package.",
+      "content_html": "Version 1.21.13 published on 2024-08-06. The summary of changes are: Includes fixes to the go command, the covdata command, and the bytes package.",
       "summary": "1.21.13",
-      "date_published": "2025-02-27T00:49:21.20735658Z"
+      "date_published": "2025-03-01T00:52:51.599115936Z"
     },
     {
       "id": "go122",
       "url": "https://go.dev/doc/devel/release#go1.22.minor",
       "title": "golang1.22",
-      "content_html": "Version 1.22.12 published on 2025-02-04. The summary of changes are: Includes security fixes to the crypto/elliptic package alongside bug fixes to the compiler and the go command.",
+      "content_html": "Version 1.22.12 published on 2025-02-04. The summary of changes are: Go 1.22.12 includes security fixes to the crypto/elliptic package, along with bug fixes for the compiler and the go command.",
       "summary": "1.22.12",
-      "date_published": "2025-02-27T00:49:21.20735689Z"
+      "date_published": "2025-03-01T00:52:51.599116507Z"
     },
     {
       "id": "go123",
       "url": "https://go.dev/doc/devel/release#go1.23.minor",
       "title": "golang1.23",
-      "content_html": "Version 1.23.6 published on 2025-02-04. The summary of changes are: Includes security fixes to the crypto/elliptic package and bug fixes to the compiler and the go command.",
+      "content_html": "Version 1.23.6 published on 2025-02-04. The summary of changes are: This release includes security fixes to the crypto/elliptic package and bug fixes to the compiler and the go command.",
       "summary": "1.23.6",
-      "date_published": "2025-02-27T00:49:21.207357231Z"
+      "date_published": "2025-03-01T00:52:51.599117139Z"
     },
     {
       "id": "helm",
       "url": "https://github.com/helm/helm/releases",
       "title": "helm",
-      "content_html": "Version v3.17.1 published on 2025-02-12. The summary of changes are: Helm v3.17.1 is a patch release that includes minor fixes and improvements. Users are encouraged to upgrade for a better experience. Discussions and contributions can be made via Kubernetes Slack and public calls.",
+      "content_html": "Version v3.17.1 published on 2025-02-12. The summary of changes are: Helm v3.17.1 is a patch release focused on bug fixes and improvements. Users are encouraged to upgrade for the best experience. The community continues to grow with active contributions.",
       "summary": "v3.17.1",
-      "date_published": "2025-02-27T00:49:21.207358383Z"
+      "date_published": "2025-03-01T00:52:51.59911776Z"
     },
     {
       "id": "inkscape",
       "url": "https://inkscape.org/release/",
       "title": "inkscape",
-      "content_html": "Version 1.4 published on 2024-10-13. The summary of changes are: Inkscape 1.4 introduces a filter gallery with previews, modular grids, improved swatches handling, and a new font browser. It also adds features such as Affinity Designer file import, customizable handles, faster extensions, and a new icon set with over 500 icons. The release includes numerous enhancements and bug fixes for an improved user experience.",
+      "content_html": "Version 1.4 published on 2024-10-13. The summary of changes are: Inkscape 1.4 introduces a Filter Gallery, modular grids, improved palette handling, and faster image clipping, alongside numerous enhancements and bug fixes.",
       "summary": "1.4",
-      "date_published": "2025-02-27T00:49:21.207358854Z"
+      "date_published": "2025-03-01T00:52:51.599118311Z"
     },
     {
       "id": "intellij",
       "url": "https://data.services.jetbrains.com/products/releases?code=IIU\u0026latest=true\u0026type=release",
       "title": "IntelliJ IDEA",
-      "content_html": "Version 2024.3.3 published on 2025-02-12. The summary of changes are: This update improves Maven project synchronization, enhances screen reader detection on Windows startup, and fixes custom toolbar icon persistence.",
-      "summary": "2024.3.3",
-      "date_published": "2025-02-27T00:49:21.207360006Z"
+      "content_html": "Version 2024.3.4 published on 2025-02-27. The summary of changes are: The latest release fixes issues such as incorrect reporting of missing keys in gitlab-ci.yml, unnecessary spaces in copied documentation text, and plugin update detection. Additionally, AWS providers in Terraform are now properly recognized, and several Kafka plugin issues have been resolved.",
+      "summary": "2024.3.4",
+      "date_published": "2025-03-01T00:52:51.599118751Z"
     },
     {
       "id": "jmeter",
       "url": "https://github.com/apache/jmeter/tags",
       "title": "jmeter",
-      "content_html": "Version 5.6.3 published on 2024-01-07. The summary of changes are: This release includes improvements, bug fixes, and refinements to enhance performance and stability.",
+      "content_html": "Version 5.6.3 published on 2024-01-07. The summary of changes are: Latest release with optimizations and bug fixes to enhance performance and usability.",
       "summary": "5.6.3",
-      "date_published": "2025-02-27T00:49:21.207360437Z"
+      "date_published": "2025-03-01T00:52:51.599120164Z"
     },
     {
       "id": "jq",
       "url": "https://github.com/stedolan/jq/releases",
       "title": "jq",
-      "content_html": "Version 1.7.1 published on 2023-12-13. The summary of changes are: Fixes for multiple vulnerabilities and stability improvements, including buffer overflow and JSON parsing updates. Enhancements in CLI usability, memory leak handling, and support for OpenBSD. Various optimizations for performance, usability, and conformity to JSON standards.",
+      "content_html": "Version 1.7.1 published on 2023-12-13. The summary of changes are: This release addresses critical security vulnerabilities, improves CLI usability, and resolves several memory management issues, ensuring better performance and stability.",
       "summary": "1.7.1",
-      "date_published": "2025-02-27T00:49:21.207360738Z"
+      "date_published": "2025-03-01T00:52:51.599120875Z"
     },
     {
       "id": "kubectl",
       "url": "https://kubernetes.io/releases/",
       "title": "kubectl",
-      "content_html": "Version 1.32.2 published on 2025-02-11. The summary of changes are: The latest release, 1.32.2, includes critical updates and patches to enhance platform stability and security. This version focuses on reliability improvements, ensuring better compatibility and performance. Detailed changelog information is available in the release schedule document.",
+      "content_html": "Version 1.32.2 published on 2025-02-11. The summary of changes are: This release includes the latest patch updates and fixes for improved stability and performance in Kubernetes.",
       "summary": "1.32.2",
-      "date_published": "2025-02-27T00:49:21.207361228Z"
+      "date_published": "2025-03-01T00:52:51.599121577Z"
     },
     {
       "id": "make-win",
       "url": "https://gnuwin32.sourceforge.net/packages/make.htm",
       "title": "make-win",
-      "content_html": "Version 3.81 published on 2006-11-25. The summary of changes are: This release focuses on enhancing the automation of generating executables and updates only files affected by source code changes. It brings improved file dependency resolution and provides broader compatibility across multiple programming languages. Additionally, it adds better support for package installation and other repetitive tasks.",
+      "content_html": "Version 3.81 published on 2006-11-25. The summary of changes are: This release includes enhanced support for incremental builds, better dependency tracking, and improved compatibility for Windows environments.",
       "summary": "3.81",
-      "date_published": "2025-02-27T00:49:21.207361509Z"
+      "date_published": "2025-03-01T00:52:51.599122138Z"
     },
     {
       "id": "maven",
       "url": "https://maven.apache.org/download.cgi",
       "title": "maven",
-      "content_html": "Version 3.9.9 published on 2025-02-26. The summary of changes are: Apache Maven 3.9.9 is the latest release, recommended for all users, featuring the newest enhancements and bug fixes. It ensures compatibility with JDK 8+ and allows building against older JDK versions using toolchains. The release emphasizes stability and performance improvements.",
+      "content_html": "Version 3.9.9 published on 2025-02-28. The summary of changes are: Apache Maven 3.9.9 is the latest stable release, recommended for all users. It includes the newest features and critical bug fixes. Ensure optimal compatibility and performance by upgrading to this version.",
       "summary": "3.9.9",
-      "date_published": "2025-02-27T00:49:21.207362441Z"
+      "date_published": "2025-03-01T00:52:51.599122669Z"
     },
     {
       "id": "miniconda",
       "url": "https://docs.anaconda.com/miniconda/release-notes/",
       "title": "miniconda",
-      "content_html": "Version 25.1.1-2 published on 2025-02-11. The summary of changes are: This release includes the updated conda-anaconda-tos version 0.1.2 and offers bug fixes for improved stability and performance.",
-      "summary": "25.1.1-2",
-      "date_published": "2025-02-27T00:49:21.207362871Z"
+      "content_html": "Version 4.12.0 published on 2023-03-15. The summary of changes are: Miniconda 4.12.0 includes updated dependencies and fixes minor bugs for improved stability. It focuses on lightweight conda usage, ensuring compatibility with the latest conda versions. This release ensures an efficient setup for Python data science workflows.",
+      "summary": "4.12.0",
+      "date_published": "2025-03-01T00:52:51.59912332Z"
     },
     {
       "id": "node",
       "url": "https://nodejs.org/en/download/releases/",
       "title": "node",
-      "content_html": "Version 20.18.3 published on 2025-02-10. The summary of changes are: This release includes performance enhancements, updates to npm version 10.8.2, and stability improvements for the Iron LTS branch.",
+      "content_html": "Version 20.18.3 published on 2025-02-10. The summary of changes are: Latest stable release with performance improvements and bug fixes for broader compatibility.",
       "summary": "20.18.3",
-      "date_published": "2025-02-27T00:49:21.207363392Z"
+      "date_published": "2025-03-01T00:52:51.599125875Z"
     },
     {
       "id": "node16",
       "url": "https://nodejs.org/en/download/releases/",
-      "title": "Node.js",
-      "content_html": "Version 16.20.2 published on 2023-08-08. The summary of changes are: This release, codenamed Gallium, includes critical updates and patches to ensure stability and security for Active LTS users.",
+      "title": "node16",
+      "content_html": "Version 16.20.2 published on 2023-08-08. The summary of changes are: This is the latest stable release of Node.js 16, providing long-term support with critical bug fixes and improvements.",
       "summary": "16.20.2",
-      "date_published": "2025-02-27T00:49:21.207363913Z"
+      "date_published": "2025-03-01T00:52:51.599127518Z"
     },
     {
       "id": "node18",
       "url": "https://nodejs.org/en/download/releases/",
       "title": "node18",
-      "content_html": "Version v18.20.7 published on 2025-02-20. The summary of changes are: The release includes the latest updates and stability improvements for the Node.js 18 branch. It is an Active LTS release and recommended for production environments. Critical bugs and patches are addressed in this version.",
-      "summary": "v18.20.7",
-      "date_published": "2025-02-27T00:49:21.207365797Z"
+      "content_html": "Version 18.20.7 published on 2025-02-20. The summary of changes are: The latest stable release includes critical bug fixes and updates to ensure long-term support and reliability.",
+      "summary": "18.20.7",
+      "date_published": "2025-03-01T00:52:51.599128309Z"
     },
     {
       "id": "node20",
       "url": "https://nodejs.org/en/download/releases/",
       "title": "node20",
-      "content_html": "Version 20.18.3 published on 2025-02-10. The summary of changes are: This stable version includes critical updates and bug fixes, improving compatibility and performance.",
+      "content_html": "Version 20.18.3 published on 2025-02-10. The summary of changes are: The latest stable release with multiple updates and fixes for improved performance and reliability, ensuring optimal long-term support.",
       "summary": "20.18.3",
-      "date_published": "2025-02-27T00:49:21.207366358Z"
+      "date_published": "2025-03-01T00:52:51.599129241Z"
     },
     {
       "id": "node22",
       "url": "https://nodejs.org/en/download/releases/",
       "title": "node22",
-      "content_html": "Version 22.14.0 published on 2025-02-11. The summary of changes are: Updated to the latest stable release with critical improvements and minor bug fixes.",
-      "summary": "22.14.0",
-      "date_published": "2025-02-27T00:49:21.207366779Z"
+      "content_html": "Version v22.14.0 published on 2025-02-11. The summary of changes are: Node.js v22.14.0 introduces minor updates and improvements in performance and stability. This version includes the latest bug fixes and updated dependencies, ensuring enhanced developer experience.",
+      "summary": "v22.14.0",
+      "date_published": "2025-03-01T00:52:51.599129712Z"
     },
     {
       "id": "notepadplusplus",
       "url": "https://notepad-plus-plus.org/index.xml",
       "title": "notepad-plus-plus",
-      "content_html": "Version 8.7.7 published on 2025-02-07. The summary of changes are: The release of v8.7.7 addresses regression issues with SCN_MODIFIED notification events and introduces a new API (NPPM_ADDSCNMODIFIEDFLAGS) to resolve plugin-related problems.",
+      "content_html": "Version 8.7.7 published on 2025-02-07. The summary of changes are: Version 8.7.7 fixes the regression in v8.7.6 regarding SCN_MODIFIED notifications for some plugins and introduces the new API NPPM_ADDSCNMODIFIEDFLAGS.",
       "summary": "8.7.7",
-      "date_published": "2025-02-27T00:49:21.207367199Z"
+      "date_published": "2025-03-01T00:52:51.599130173Z"
     },
     {
       "id": "openshift",
       "url": "https://github.com/openshift/okd/releases",
       "title": "openshift",
-      "content_html": "Version 4.17.0-okd-scos.0 published on 2024-12-16. The summary of changes are: The release includes artifacts copied from the okd-scos repo, with a pre-configured openshift-install binary and client tooling enhancements. It offers updated component versions like Kubernetes 1.30.6 and machine-os 417.9.202412022032-0. Upgrade notes are provided specifically for transitioning from OKD 4.15 clusters.",
+      "content_html": "Version 4.17.0-okd-scos.0 published on 2024-12-16. The summary of changes are: This latest release includes updated client tools and enhancements, copied from the okd-scos repository. Existing OKD 4.15 clusters are advised to review upgrade notes before proceeding. The release features preconfigured openshift-install binaries for installation.",
       "summary": "4.17.0-okd-scos.0",
-      "date_published": "2025-02-27T00:49:21.20736749Z"
+      "date_published": "2025-03-01T00:52:51.599130704Z"
     },
     {
       "id": "oraclejdk11",
       "url": "https://www.oracle.com/java/technologies/javase/11all-relnotes.html",
       "title": "oraclejdk11",
-      "content_html": "Version 11.0.26 published on 2025-01-21. The summary of changes are: JDK 11.0.26 introduces IANA time zone data version 2024b, new debugging options with timestamps and threads, and fixes critical bugs including stability for Wayland systems.",
+      "content_html": "Version 11.0.26 published on 2025-01-21. The summary of changes are: This release introduces IANA time zone data 2024b improvements, updates to security baselines, and new debugging options for java.security.debug, alongside critical bug fixes for various components.",
       "summary": "11.0.26",
-      "date_published": "2025-02-27T00:49:21.207367851Z"
+      "date_published": "2025-03-01T00:52:51.599131285Z"
     },
     {
       "id": "oraclejdk17",
       "url": "https://www.oracle.com/java/technologies/javase/17all-relnotes.html",
       "title": "oraclejdk17",
-      "content_html": "Version 17.0.14 published on 2025-01-21. The summary of changes are: This release includes timezone updates (IANA 2024b), critical bug fixes, enhanced security baselines, and an updated string concatenation mechanism.",
+      "content_html": "Version 17.0.14 published on 2025-01-21. The summary of changes are: Latest release includes IANA Time Zone Database 2024b updates, enhanced security baselines, and fixes for multiple critical issues like string concatenation bugs and ProcessBuilder enhancements.",
       "summary": "17.0.14",
-      "date_published": "2025-02-27T00:49:21.207368261Z"
+      "date_published": "2025-03-01T00:52:51.599132006Z"
     },
     {
       "id": "oraclejdk21",
       "url": "https://www.oracle.com/java/technologies/javase/21all-relnotes.html",
       "title": "oraclejdk21",
-      "content_html": "Version 21.0.6 published on 2025-01-21. The summary of changes are: JDK 21.0.6 includes the IANA Time Zone Data 2024b, improves historical data for several regions, and contains critical security fixes and updates.",
+      "content_html": "Version 21.0.6 published on 2025-01-21. The summary of changes are: JDK 21.0.6 includes IANA time zone data 2024b with updates for historical data and compatibility improvements. It also contains numerous bug fixes and security updates, addressing vulnerabilities and enhancing stability.",
       "summary": "21.0.6",
-      "date_published": "2025-02-27T00:49:21.207368692Z"
+      "date_published": "2025-03-01T00:52:51.599132557Z"
     },
     {
       "id": "oraclejdk8",
       "url": "https://www.oracle.com/java/technologies/javase/8u-relnotes.html",
       "title": "oraclejdk8",
-      "content_html": "Version 8u441 published on unknown. The summary of changes are: JDK 8u441 is the latest General Availability (GA) release, providing critical updates and performance improvements across the platform. It includes fixes introduced in previous BPR builds to enhance system stability. This version is recommended for all users of JDK 8.",
+      "content_html": "Version 8u441 published on 2025-XX-XX. The summary of changes are: This is the latest GA release of Oracle JDK 8, providing updated fixes and performance improvements.",
       "summary": "8u441",
-      "date_published": "2025-02-27T00:49:21.207369003Z"
+      "date_published": "2025-03-01T00:52:51.599133109Z"
     },
     {
       "id": "powershell",
       "url": "https://github.com/PowerShell/PowerShell/releases",
       "title": "powershell",
-      "content_html": "Version 7.5.0 published on 2023-01-23. The summary of changes are: This release includes updates to .NET SDK 9.0.102, added support for publishing packages, improved build processes, and enhanced documentation with updated HelpInfoUri.",
+      "content_html": "Version 7.5.0 published on 2023-01-23. The summary of changes are: This latest stable release includes .NET SDK updates to 9.0.102, improvements in packaging pipelines, and refined HelpInfoUri. It also ensures consistent AssemblyVersion for servicing releases and adds GitHub Release and NuGet Release pipeline updates.",
       "summary": "7.5.0",
-      "date_published": "2025-02-27T00:49:21.207369394Z"
+      "date_published": "2025-03-01T00:52:51.59913379Z"
     },
     {
       "id": "putty",
       "url": "https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html",
       "title": "putty",
-      "content_html": "Version 0.83 published on 2025-02-08. The summary of changes are: This release includes the latest stable updates and fixes for PuTTY, ensuring improved functionality and stability across all supported platforms.",
+      "content_html": "Version 0.83 published on 2025-02-08. The summary of changes are: PuTTY 0.83 includes various stability improvements and addresses bug fixes. This release ensures reliable performance while maintaining backward compatibility with previous versions of PuTTY utilities.",
       "summary": "0.83",
-      "date_published": "2025-02-27T00:49:21.207369875Z"
+      "date_published": "2025-03-01T00:52:51.59913422Z"
     },
     {
       "id": "python",
       "url": "https://www.python.org/downloads/",
       "title": "python",
-      "content_html": "Version 3.13.2 published on 2025-02-04. The summary of changes are: Includes bugfixes and improvements to enhance performance and stability for Python applications.",
+      "content_html": "Version 3.13.2 published on 2025-02-04. The summary of changes are: Python 3.13.2 includes bug fixes and optimizations to enhance performance and reliability. It is the latest stable release in the 3.13 series.",
       "summary": "3.13.2",
-      "date_published": "2025-02-27T00:49:21.207370175Z"
+      "date_published": "2025-03-01T00:52:51.599134741Z"
     },
     {
       "id": "python310",
       "url": "https://www.python.org/downloads/",
       "title": "python3.10",
-      "content_html": "Version 3.10.16 published on 2024-12-03. The summary of changes are: This is a security release for Python 3.10, providing essential updates and fixes to ensure long-term stability and security.",
+      "content_html": "Version 3.10.16 published on 2024-12-03. The summary of changes are: This release includes the latest security fixes and improvements, ensuring stability and security for projects relying on Python 3.10.",
       "summary": "3.10.16",
-      "date_published": "2025-02-27T00:49:21.207370496Z"
+      "date_published": "2025-03-01T00:52:51.599135222Z"
     },
     {
       "id": "python311",
       "url": "https://www.python.org/downloads/",
       "title": "python3.11",
-      "content_html": "Version 3.11.11 published on 2024-12-03. The summary of changes are: This release includes numerous security updates and bug fixes, ensuring the stability and reliability of the Python 3.11 branch.",
+      "content_html": "Version 3.11.11 published on 2024-12-03. The summary of changes are: This release includes important security updates and minor bug fixes to ensure stability and reliability for Python 3.11.",
       "summary": "3.11.11",
-      "date_published": "2025-02-27T00:49:21.207371097Z"
+      "date_published": "2025-03-01T00:52:51.599135633Z"
     },
     {
       "id": "python312",
       "url": "https://www.python.org/downloads/",
       "title": "python3.12",
-      "content_html": "Version 3.12.9 published on 2025-02-04. The summary of changes are: This release includes bug fixes, performance improvements, and security updates to ensure stability and reliability for Python 3.12 users.",
+      "content_html": "Version 3.12.9 published on 2025-02-04. The summary of changes are: This latest stable version of Python 3.12 includes numerous bug fixes and optimizations, ensuring better performance and reliability.",
       "summary": "3.12.9",
-      "date_published": "2025-02-27T00:49:21.207371407Z"
+      "date_published": "2025-03-01T00:52:51.599136114Z"
     },
     {
       "id": "python39",
       "url": "https://www.python.org/downloads/",
       "title": "python3.9",
-      "content_html": "Version 3.9.21 published on 2024-12-03. The summary of changes are: This release includes important security fixes and general performance improvements for Python 3.9. It ensures the stability and reliability of applications using this version. Upgrading to this version is strongly recommended.",
+      "content_html": "Version 3.9.21 published on 2024-12-03. The summary of changes are: This is the latest security release for Python 3.9. It includes updates to address vulnerabilities and improve security. No new features have been introduced.",
       "summary": "3.9.21",
-      "date_published": "2025-02-27T00:49:21.207371718Z"
+      "date_published": "2025-03-01T00:52:51.599136605Z"
     },
     {
       "id": "rider",
       "url": "https://data.services.jetbrains.com/products/releases?code=RD\u0026type=release\u0026latest=true",
       "title": "rider",
-      "content_html": "Version 2024.3.5 published on 2025-02-07. The summary of changes are: Rider 2024.3.5 includes a fix for the Go to Class feature and introduces improved cloud completion models for C#. It also adds support for Claude AI models in JetBrains AI Assistant, enhancing performance and reliability.",
-      "summary": "2024.3.5",
-      "date_published": "2025-02-27T00:49:21.207372028Z"
+      "content_html": "Version 2024.3.6 published on 2025-02-28. The summary of changes are: Rider 2024.3.6 includes fixes for debugging session issues, macOS freezes related to Metal rendering, and duplicate items in Go to Symbol search results. It also resolves issues with xUnit v3 tests and Qodana hanging during Unreal Engine project analysis.",
+      "summary": "2024.3.6",
+      "date_published": "2025-03-01T00:52:51.599137106Z"
     },
     {
       "id": "screentogif",
       "url": "https://github.com/NickeManarin/ScreenToGif/releases",
       "title": "screentogif",
-      "content_html": "Version 2.41.1 published on 2024-09-08. The summary of changes are: Updated Chinese, Turkish, Arabic, and Dutch localizations. Fixed issues with Move Left/Right commands and other minor bugs. Improved the stop recording message.",
+      "content_html": "Version 2.41.1 published on 2024-09-08. The summary of changes are: This release includes updates to Chinese, Turkish, Arabic, and Dutch localizations. It also fixes the Move Left/Right commands, an issue with an extra color button, and a typo in the stop recording message.",
       "summary": "2.41.1",
-      "date_published": "2025-02-27T00:49:21.207372309Z"
+      "date_published": "2025-03-01T00:52:51.599137567Z"
     },
     {
       "id": "task",
       "url": "https://github.com/go-task/task/releases",
       "title": "task",
-      "content_html": "Version v3.41.0 published on 2025-01-18. The summary of changes are: Fixed several bugs including issues with dynamic variables, concurrent map writes, and template functions. Added new features like TASK_DIR special variable and checksum/timestamp variable accessibility. Updated installation methods and refactored internal implementations.",
+      "content_html": "Version v3.41.0 published on 2025-01-18. The summary of changes are: Fixed issues with dynamic variables, added TASK_DIR special variable, and improved template handling and task exclusion options.",
       "summary": "v3.41.0",
-      "date_published": "2025-02-27T00:49:21.207372609Z"
+      "date_published": "2025-03-01T00:52:51.599137987Z"
     },
     {
       "id": "terraform",
       "url": "https://github.com/hashicorp/terraform/releases",
       "title": "terraform",
-      "content_html": "Version 1.10 published on Not Provided. The summary of changes are: The latest stable release includes various updates and bug fixes, improving provider installation and backend configurations. Enhancements include support for mocked and overridden values during test runs. Refer to changelogs for detailed information on previous versions.",
-      "summary": "1.10",
-      "date_published": "2025-02-27T00:49:21.20737307Z"
+      "content_html": "Version 1.11.0 published on 2025-02-27. The summary of changes are: Introduces write-only attributes, S3-native state locking, and JUnit XML support in terraform test command along with various enhancements and fixes.",
+      "summary": "1.11.0",
+      "date_published": "2025-03-01T00:52:51.599138629Z"
     },
     {
       "id": "vscode",
       "url": "https://github.com/microsoft/vscode/releases",
       "title": "vscode",
-      "content_html": "Version 1.97.2 published on 2025-02-13. The summary of changes are: This update addresses critical issues. For detailed notes, visit Updates on code.visualstudio.com.",
+      "content_html": "Version 1.97.2 published on 2025-02-13. The summary of changes are: The January 2025 Recovery 2 update addresses various issues. For complete release notes, visit Updates on code.visualstudio.com.",
       "summary": "1.97.2",
-      "date_published": "2025-02-27T00:49:21.207373471Z"
+      "date_published": "2025-03-01T00:52:51.59913914Z"
     },
     {
       "id": "windows-terminal",
       "url": "https://github.com/microsoft/terminal/releases",
       "title": "windows-terminal",
-      "content_html": "Version 1.22.10352.0 published on 2023-02-06. The summary of changes are: Windows Terminal 1.22 introduces a rewritten console hosting implementation, improved support for grapheme clusters, and provides a stable base for the future of ConPTY-related advancements.",
+      "content_html": "Version 1.22.10352.0 published on 2023-02-06. The summary of changes are: Windows Terminal 1.22 marks itself as Stable, introducing a rewritten console hosting implementation that supports Sixels, improved performance, and better grapheme cluster handling for emojis and Unicode sequences.",
       "summary": "1.22.10352.0",
-      "date_published": "2025-02-27T00:49:21.207373822Z"
+      "date_published": "2025-03-01T00:52:51.599139541Z"
     },
     {
       "id": "winmerge",
       "url": "https://github.com/WinMerge/winmerge/releases",
       "title": "winmerge",
-      "content_html": "Version 2.16.46 published on 2025-01-27. The summary of changes are: This is a stable release with multiple bug fixes, enhancements to folder comparison, plugin adjustments, and updated translations in various languages.",
+      "content_html": "Version 2.16.46 published on 2025-01-27. The summary of changes are: This stable release includes bug fixes for ALT-F4 behavior, improved folder comparison prompts, and plugin display issues. Additional enhancements were made to manual documentation and translation updates for multiple languages. It replaces earlier stable versions as the recommended release for all users.",
       "summary": "2.16.46",
-      "date_published": "2025-02-27T00:49:21.207374253Z"
+      "date_published": "2025-03-01T00:52:51.599140021Z"
     },
     {
       "id": "wireshark",
       "url": "https://www.wireshark.org/download.html",
       "title": "wireshark",
-      "content_html": "Version 4.4.5 published on . The summary of changes are: The latest stable release of Wireshark, which supersedes all previous releases.",
+      "content_html": "Version 4.4.5 published on not provided. The summary of changes are: The latest stable release supersedes all previous releases with enhancements and fixes.",
       "summary": "4.4.5",
-      "date_published": "2025-02-27T00:49:21.207374713Z"
+      "date_published": "2025-03-01T00:52:51.599140652Z"
     },
     {
       "id": "yq",
       "url": "https://github.com/mikefarah/yq/releases",
       "title": "yq",
-      "content_html": "Version v4.45.1 published on 2025-01-12. The summary of changes are: Added support for creating parent directories when using --split-exp, updated dependencies, and included contributions from the community.",
-      "summary": "v4.45.1",
-      "date_published": "2025-02-27T00:49:21.207375084Z"
+      "content_html": "Version 4.45.1 published on 2025-01-12. The summary of changes are: Introduced support to create parent directories when using --split-exp, updated dependencies, and credited contributor rudo-thomas.",
+      "summary": "4.45.1",
+      "date_published": "2025-03-01T00:52:51.599141294Z"
     }
   ]
 }
